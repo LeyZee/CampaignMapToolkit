@@ -1,0 +1,23 @@
+<DYNAMIC_RESOURCES_DATABASE>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+  <!-- //////////////////////////////////////////////////This is the farm regions////////////////////////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+
+	<!-- major northern -->
+  
+	<RESOURCE_TYPE building_superchain='att_sch_agriculture' level='0' red='141' green='207' blue='248' tile_upgrade_id='farmland_northern' />
+	<RESOURCE_TYPE building_superchain='att_sch_agriculture' level='1' red='72' green='156' blue='210' tile_upgrade_id='farmland_northern' />
+	<RESOURCE_TYPE building_superchain='att_sch_agriculture' level='2' red='46' green='127' blue='179' tile_upgrade_id='farmland_northern' />
+	<RESOURCE_TYPE building_superchain='att_sch_agriculture' level='3' red='40' green='70' blue='200' tile_upgrade_id='farmland_northern' />
+	
+	<!-- major mediterranean -->
+  
+	<RESOURCE_TYPE building_superchain='att_sch_agriculture' level='0' red='221' green='124' blue='225' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='att_sch_agriculture' level='1' red='185' green='80' blue='189' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='att_sch_agriculture' level='2' red='118' green='27' blue='122' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='att_sch_agriculture' level='3' red='66' green='6' blue='68' tile_upgrade_id='farmland_mediterranean' />
+
+</DYNAMIC_RESOURCES_DATABASE>

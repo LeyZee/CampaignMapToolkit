@@ -1,0 +1,243 @@
+﻿<Window x:Class="CAIME.Views.Windows.ResizeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CAIME.Views.Windows"
+        mc:Ignorable="d"
+        Title="Resize map"
+        Height="Auto"
+        Width="Auto"
+        MinWidth="500"
+        MaxWidth="500"
+        MinHeight="320"
+        MaxHeight="320"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="ToolWindow"
+        Background="{StaticResource BackgroundDarkV1Brush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1"
+                   Grid.Column="4"
+                   Margin="5 5 5 5"
+                   Text="Pad Top"
+                   Foreground="White"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center" />
+
+        <TextBlock Grid.Row="8"
+                   Grid.Column="4"
+                   Margin="5 5 5 5"
+                   Text="Pad Bottom"
+                   Foreground="White"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center" />
+
+        <TextBlock Grid.Row="5"
+                   Grid.Column="1"
+                   Margin="5 5 5 5"
+                   Text="Pad Left"
+                   Foreground="White"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"/>
+
+        <TextBlock Grid.Row="5"
+                   Grid.Column="7"
+                   Margin="5 5 5 5"
+                   Text="Pad Right"
+                   Foreground="White"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right" />
+
+        <Border Grid.Row="4"
+            Grid.RowSpan="3"
+            Grid.Column="3"
+            Grid.ColumnSpan="3"
+            BorderBrush="Black"
+            BorderThickness="1">
+            
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBox Grid.Row="0"
+                     Grid.Column="0"
+                     Margin="5 5"
+                     Width="75"
+                     IsReadOnly="True"
+                     VerticalAlignment="Center"
+                     Text="{Binding OldWidth, FallbackValue=old_width}"
+                     Style="{StaticResource DarkTextBox}"
+                     Name="oldWidth" />
+
+                <TextBox Grid.Row="2"
+                     Grid.Column="0"
+                     Margin="5 5"
+                     Width="75"
+                     IsReadOnly="True"
+                     VerticalAlignment="Center"
+                     Text="{Binding NewWidth, FallbackValue=new_width}"
+                     Style="{StaticResource DarkTextBox}"
+                     Name="newWidth" />
+
+                <TextBlock Grid.Row="0"
+                       Grid.Column="1"
+                       Margin="5 5 5 5"
+                       Text="x"
+                       Foreground="White"
+                       VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Row="1"
+                       Grid.Column="0"
+                       Margin="5 5 5 5"
+                       Text="↓"
+                       Foreground="White"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="1"
+                       Grid.Column="2"
+                       Margin="5 5 5 5"
+                       Text="↓"
+                       Foreground="White"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+                <TextBlock Grid.Row="2"
+                       Grid.Column="1"
+                       Margin="5 5 5 5"
+                       Text="x"
+                       Foreground="White"
+                       VerticalAlignment="Center"/>
+
+                <TextBox Grid.Row="0"
+                    Grid.Column="2"
+                    Margin="5 5"
+                    Width="75"
+                    IsReadOnly="True"
+                    VerticalAlignment="Center"
+                    Text="{Binding OldHeight, FallbackValue=old_height}"
+                    Style="{StaticResource DarkTextBox}"
+                    Name="oldHeight" />
+
+                <TextBox Grid.Row="2"
+                    Grid.Column="2"
+                    Margin="5 5"
+                    Width="75"
+                    IsReadOnly="True"
+                    VerticalAlignment="Center"
+                    Text="{Binding NewHeight, FallbackValue=new_height}"
+                    Style="{StaticResource DarkTextBox}"
+                    Name="newHeight" />
+            </Grid>
+        </Border>
+
+
+
+        <TextBox Grid.Row="5"
+                 Grid.Column="2"
+                 Margin="5 5"
+                 Width="75"
+                 VerticalAlignment="Center"
+                 Text="{Binding NewPadLeft, FallbackValue=pad_left}"
+                 Style="{StaticResource DarkTextBox}"
+                 Name="newPadLeft" />
+
+
+        <TextBox Grid.Row="3"
+                 Grid.Column="4"
+                 Margin="5 5"
+                 Width="75"
+                 VerticalAlignment="Center"
+                 Text="{Binding NewPadTop, FallbackValue=pad_top}"
+                 Style="{StaticResource DarkTextBox}"
+                 Name="newPadTop" />
+
+        <TextBox Grid.Row="7"
+                 Grid.Column="4"
+                 Margin="5 5"
+                 Width="75"
+                 VerticalAlignment="Center"
+                 Text="{Binding NewPadBottom, FallbackValue=pad_bottom}"
+                 Style="{StaticResource DarkTextBox}"
+                 Name="newPadBottom" />
+
+
+        <TextBox Grid.Row="5"
+                 Grid.Column="6"
+                 Margin="5 5"
+                 Width="75"
+                 VerticalAlignment="Center"
+                 Text="{Binding NewPadRight, FallbackValue=pad_right}"
+                 Style="{StaticResource DarkTextBox}"
+                 Name="newPadRight" />
+
+        <Separator Grid.Row="9"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="9"
+                   Margin="0 5"
+                   Background="{StaticResource BackgroundDarkV3Brush}" />
+
+        <StackPanel Grid.Row="10"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="9"
+                    Margin="5"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right">
+
+            <Button x:Name="confirmButton"
+                    Content="Confirm"
+                    Padding="15 3"
+                    Margin="0 5 0 5"
+                    Style="{StaticResource DarkButton}"
+                    Click="ConfirmButton_Click"/>
+
+            <Button x:Name="cancelButton"
+                    Content="Cancel"
+                    IsCancel="True"
+                    Padding="15 3"
+                    Margin="2 5 0 5"
+                    Style="{StaticResource DarkButton}"
+                    Click="CancelButton_Click"/>
+
+        </StackPanel>
+        
+    </Grid>
+</Window>

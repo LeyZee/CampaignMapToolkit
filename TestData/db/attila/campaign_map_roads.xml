@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot export_time="Tue 6. Oct 12:31:13 2015" revision="22" export_branch="T:/branches/attila/charlemagne/rome2/binaries" export_user="bob">
+<edit_uuid>e30c7aa6-3dab-4df9-94b3-e76c8740c181</edit_uuid>
+<campaign_map_roads record_uuid="{c2201654-4d8a-47cb-8346-424168191053}" record_timestamp="1409134748612">
+<campaign>main_attila</campaign>
+<key>att_road_lv_1</key>
+<movement_cost>80</movement_cost>
+<threshold>0</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{d68db231-d60c-4c56-bb6a-567f56d61cf8}" record_timestamp="1416431358256">
+<campaign>main_attila</campaign>
+<key>att_road_lv_2</key>
+<movement_cost>65</movement_cost>
+<threshold>10</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{b45f81c9-df54-42d8-bac8-4ef9a72b1ac6}" record_timestamp="1413387713829">
+<campaign>main_attila</campaign>
+<key>att_road_lv_3</key>
+<movement_cost>50</movement_cost>
+<threshold>40</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{fc3ab9fb-b668-417e-9107-df7e863f8c8d}" record_timestamp="1427832663489">
+<campaign>bel_attila</campaign>
+<key>bel_road_lv_1</key>
+<movement_cost>80</movement_cost>
+<threshold>0</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{4a74f4bc-60ea-4787-a467-539cf8c28b30}" record_timestamp="1427832663538">
+<campaign>bel_attila</campaign>
+<key>bel_road_lv_2</key>
+<movement_cost>65</movement_cost>
+<threshold>10</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{81680f08-e15b-4291-ba2d-bea60b49ae1d}" record_timestamp="1427832663588">
+<campaign>bel_attila</campaign>
+<key>bel_road_lv_3</key>
+<movement_cost>50</movement_cost>
+<threshold>40</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{3f29e480-df29-4013-a8ad-69ab527ee2e8}" record_timestamp="1444131073050">
+<campaign>cha_attila</campaign>
+<key>cha_road_lv_1</key>
+<movement_cost>50</movement_cost>
+<threshold>0</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{fdc81abd-bf36-4b70-8a42-61901d70b9a5}" record_timestamp="1444131073054">
+<campaign>cha_attila</campaign>
+<key>cha_road_lv_2</key>
+<movement_cost>50</movement_cost>
+<threshold>10</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{db43d788-81c6-4e95-b8ae-29955a69d163}" record_timestamp="1439803081485">
+<campaign>cha_attila</campaign>
+<key>cha_road_lv_3</key>
+<movement_cost>50</movement_cost>
+<threshold>40</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{bc2b194c-d189-4af7-92ce-b63685366fc4}" record_timestamp="1409134748612">
+<campaign>pro_attila</campaign>
+<key>pro_road_lv_1</key>
+<movement_cost>80</movement_cost>
+<threshold>0</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{78ed99dc-9b74-4a3c-806d-bba95f7f03b0}" record_timestamp="1416431358364">
+<campaign>pro_attila</campaign>
+<key>pro_road_lv_2</key>
+<movement_cost>65</movement_cost>
+<threshold>10</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+<campaign_map_roads record_uuid="{7328ca39-9096-426f-bc98-2f79919d19f2}" record_timestamp="1413387713951">
+<campaign>pro_attila</campaign>
+<key>pro_road_lv_3</key>
+<movement_cost>50</movement_cost>
+<threshold>40</threshold>
+<turns_required_to_downgrade_from>1</turns_required_to_downgrade_from>
+<turns_required_to_upgrade_to>1</turns_required_to_upgrade_to>
+</campaign_map_roads>
+</dataroot>

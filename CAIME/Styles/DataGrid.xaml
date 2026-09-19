@@ -1,0 +1,281 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:data="clr-namespace:System.Data;assembly=System.Data"
+                    xmlns:local="clr-namespace:CAIME">
+    
+    <Style x:Key="DarkDataGridColumnHeader" TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="LightGray" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type DataGridColumnHeader}">
+                    <Grid>
+                        <Border x:Name="columnHeaderBorder"
+		                        BorderThickness="1"
+                                BorderBrush="Transparent"
+                                Background="{StaticResource BackgroundDarkV2Brush}"
+		                        Padding="8,4">
+
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+			                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+				                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="LightGray" TargetName="columnHeaderBorder"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="DarkDataGridRowHeader" TargetType="{x:Type DataGridRowHeader}">
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="LightGray" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type DataGridRowHeader}">
+                    <Grid>
+                        <Border x:Name="rowHeaderBorder"
+		                        BorderThickness="0"
+                                BorderBrush="Transparent"
+                                Background="{StaticResource BackgroundDarkV2Brush}"
+		                        Padding="5,2">
+
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+			                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+				                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="LightGray" TargetName="rowHeaderBorder"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="DarkDataGridRow" TargetType="{x:Type DataGridRow}">
+        <Setter Property="Background" Value="LightYellow"/>
+        <Setter Property="Foreground" Value="LightGray" />
+        <Setter Property="Validation.ErrorTemplate" Value="{x:Null}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type DataGridRow}">
+                    <Border x:Name="DGR_Border"
+                            SnapsToDevicePixels="True"
+	                        BorderBrush="LightGray"
+	                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <SelectiveScrollingGrid>
+                            <SelectiveScrollingGrid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </SelectiveScrollingGrid.ColumnDefinitions>
+                            <SelectiveScrollingGrid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </SelectiveScrollingGrid.RowDefinitions>
+                            <DataGridCellsPresenter Grid.Column="1"
+	                                                ItemsPanel="{TemplateBinding ItemsPanel}"
+	                                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                            <DataGridDetailsPresenter Grid.Row="1"
+	                                                  Grid.Column="1"
+                                                      Visibility="{TemplateBinding DetailsVisibility}"
+	                                                  SelectiveScrollingGrid.SelectiveScrollingOrientation="{Binding AreRowDetailsFrozen,
+                                                                                                                     ConverterParameter={x:Static SelectiveScrollingOrientation.Vertical},
+		                                                                                                             Converter={x:Static DataGrid.RowDetailsScrollingConverter},
+		                                                                                                             RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"/>
+                            <DataGridRowHeader Grid.RowSpan="2"
+	                                           SelectiveScrollingGrid.SelectiveScrollingOrientation="Vertical"
+	                                           Visibility="{Binding HeadersVisibility,
+                                                                    ConverterParameter={x:Static DataGridHeadersVisibility.Row},
+                                                                    Converter={x:Static DataGrid.HeadersVisibilityConverter},
+                                                                    RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" />
+                        </SelectiveScrollingGrid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                            <Setter Property="Background" Value="{StaticResource BackgroundDarkV1Brush}" TargetName="DGR_Border"/>
+                        </Trigger>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                            <Setter Property="Background" Value="{StaticResource BackgroundDarkV4Brush}" TargetName="DGR_Border"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="LightGray" TargetName="DGR_Border"/>
+                        </Trigger>
+                        <!-- Row style when it's pending modification; unselected -->
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=Row.MarkedState}" Value="{x:Static local:MarkedState.Modified}" />
+                                <Condition Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsSelected}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <MultiDataTrigger.Setters>
+                                <Setter Property="Background" Value="BurlyWood" TargetName="DGR_Border"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </MultiDataTrigger.Setters>
+                        </MultiDataTrigger>
+                        <!-- Row style when it's pending modification; selected -->
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=Row.MarkedState}" Value="{x:Static local:MarkedState.Modified}" />
+                                <Condition Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsSelected}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <MultiDataTrigger.Setters>
+                                <Setter Property="Background" Value="#D9C6AD" TargetName="DGR_Border"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </MultiDataTrigger.Setters>
+                        </MultiDataTrigger>
+                        <!-- Row style when it's pending removal; unselected -->
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=Row.MarkedState}" Value="{x:Static local:MarkedState.Removed}" />
+                                <Condition Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsSelected}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <MultiDataTrigger.Setters>
+                                <Setter Property="Background" Value="IndianRed" TargetName="DGR_Border"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </MultiDataTrigger.Setters>
+                        </MultiDataTrigger>
+                        <!-- Row style when it's pending removal; selected -->
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=Row.MarkedState}" Value="{x:Static local:MarkedState.Removed}" />
+                                <Condition Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsSelected}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <MultiDataTrigger.Setters>
+                                <Setter Property="Background" Value="#D09898"  TargetName="DGR_Border"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </MultiDataTrigger.Setters>
+                        </MultiDataTrigger>
+                        <!-- Row style when it's pending addition; unselected -->
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=Row.MarkedState}" Value="{x:Static local:MarkedState.Added}" />
+                                <Condition Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsSelected}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <MultiDataTrigger.Setters>
+                                <Setter Property="Background" Value="LightGreen" TargetName="DGR_Border"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </MultiDataTrigger.Setters>
+                        </MultiDataTrigger>
+                        <!-- Row style when it's pending addition; selected -->
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=Row.MarkedState}" Value="{x:Static local:MarkedState.Added}" />
+                                <Condition Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsSelected}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <MultiDataTrigger.Setters>
+                                <Setter Property="Background" Value="#B2E1B2" TargetName="DGR_Border"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </MultiDataTrigger.Setters>
+                        </MultiDataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="DarkDataGridCell" TargetType="{x:Type DataGridCell}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type DataGridCell}">
+                    <Border x:Name="border"
+			                Background="Transparent"
+			                BorderThickness="0"
+			                SnapsToDevicePixels="True">
+
+                        <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="FontWeight" Value="SemiBold"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="DarkDataGrid" TargetType="{x:Type DataGrid}">
+        <Setter Property="ColumnHeaderStyle"    Value="{StaticResource DarkDataGridColumnHeader}"/>
+        <Setter Property="RowHeaderStyle"       Value="{StaticResource DarkDataGridRowHeader}"/>
+        <Setter Property="Background"           Value="{StaticResource BackgroundDarkV0Brush}"/>
+        <Setter Property="CellStyle"            Value="{StaticResource DarkDataGridCell}"/>
+        <Setter Property="RowStyle"             Value="{StaticResource DarkDataGridRow}"/>
+        <Setter Property="Margin"               Value="0,5,0,0"/>
+        <Setter Property="BorderThickness"      Value="0"/>
+        <Setter Property="CanUserAddRows"       Value="False"/>
+        <Setter Property="CanUserDeleteRows"    Value="False"/>
+        <Setter Property="CanUserResizeRows"    Value="False"/>
+        <Setter Property="CanUserResizeColumns" Value="True"/>
+        <Setter Property="AlternationCount"     Value="2"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type DataGrid}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}"
+                            Padding="{TemplateBinding Padding}"
+                            SnapsToDevicePixels="True">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Button Focusable="False"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Command="{x:Static DataGrid.SelectAllCommand}"
+                                    Style="{StaticResource ControlButtonDark}"
+                                    Visibility="{Binding HeadersVisibility,
+                                                         ConverterParameter={x:Static DataGridHeadersVisibility.All},
+                                                         Converter={x:Static DataGrid.HeadersVisibilityConverter},
+                                                         RelativeSource={RelativeSource
+                                                         AncestorType={x:Type DataGrid}}}"
+                                    Width="{Binding CellsPanelHorizontalOffset,
+                                                    RelativeSource={RelativeSource
+                                                    AncestorType={x:Type DataGrid}}}"/>
+
+                            <DataGridColumnHeadersPresenter x:Name="PART_ColumnHeadersPresenter"
+                                                            Grid.Row="0"
+                                                            Grid.Column="1"
+                                                            Visibility="{Binding HeadersVisibility,
+                                                                                 ConverterParameter={x:Static DataGridHeadersVisibility.Column},
+                                                                                 Converter={x:Static DataGrid.HeadersVisibilityConverter},
+                                                                                 RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"/>
+
+                            <ScrollViewer x:Name="DG_ScrollViewer" Focusable="False"
+                                          Grid.Row="1" Grid.ColumnSpan="2"
+                                          Style="{StaticResource DarkScrollViewer}">
+                                <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                            </ScrollViewer>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+                
+</ResourceDictionary>

@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="CAIME.LoggerRibbon"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAIME" mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="800">
+
+    <Border Background="{StaticResource BackgroundBlueV0Brush}">
+        <Grid x:Name="container" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0"
+                    HorizontalAlignment="Left"
+                    Click="ShowMessagesStack_Click"
+                    Style="{StaticResource LoggerOutputButton}">
+
+                <TextBlock Text="{Binding VisibleMessage}"
+                           TextTrimming="WordEllipsis"
+                           FontWeight="SemiBold"/>
+            </Button>
+
+            <StackPanel Grid.Column="2"
+                        Orientation="Horizontal">
+
+                <TextBlock Text="{Binding CoordX, FallbackValue=X: 0}"
+                           Margin="0 0 10 0"
+                           Foreground="White"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center"/>
+
+                <TextBlock Text="{Binding CoordY, FallbackValue=Y: 0}"
+                           Margin="0 0 10 0"
+                           Foreground="White"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center"/>
+
+                <TextBlock Text="{Binding FPS, FallbackValue=60 FPS}"
+                           Foreground="White"
+                           Margin="20 0 10 0"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center"/>
+
+                <TextBlock Text="{Binding AppVersion, FallbackValue=v1.0.0}"
+                           Margin="0 0 10 0"
+                           Foreground="White"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center"/>
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

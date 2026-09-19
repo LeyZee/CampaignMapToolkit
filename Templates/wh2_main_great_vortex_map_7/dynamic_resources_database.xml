@@ -1,0 +1,131 @@
+<DYNAMIC_RESOURCES_DATABASE>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+  <!-- //////////////////////////////////////////////////This is the farm regions////////////////////////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+
+	<!-- major northern -->
+  
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='0' red='141' green='207' blue='248' tile_upgrade_id='farmland_northern' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='1' red='72' green='156' blue='210' tile_upgrade_id='farmland_northern' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='2' red='46' green='127' blue='179' tile_upgrade_id='farmland_northern' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='3' red='40' green='70' blue='200' tile_upgrade_id='farmland_northern' />
+	
+	<!-- minor northern	--> 
+	
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='0' red='155' green='230' blue='132' tile_upgrade_id='farmland_northern' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='1' red='109' green='200' blue='81' tile_upgrade_id='farmland_northern' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='2' red='72' green='162' blue='44' tile_upgrade_id='farmland_northern' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='3' red='49' green='132' blue='23' tile_upgrade_id='farmland_northern' />
+	
+  
+	<!-- major mediterranean -->
+  
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='0' red='221' green='124' blue='225' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='1' red='185' green='80' blue='189' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='2' red='118' green='27' blue='122' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='3' red='66' green='6' blue='68' tile_upgrade_id='farmland_mediterranean' />
+
+	<!-- minor mediterranean -->
+	
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='0' red='236' green='158' blue='120' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='1' red='236' green='132' blue='81' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='2' red='234' green='101' blue='36' tile_upgrade_id='farmland_mediterranean' />
+ 	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='3' red='229' green='75' blue='0' tile_upgrade_id='farmland_mediterranean' />
+
+	<!-- major africa -->
+	
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='0' red='243' green='137' blue='137' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='1' red='209' green='87' blue='87' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='2' red='175' green='45' blue='45' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMajor' level='2' red='137' green='16' blue='16' tile_upgrade_id='farmland_mediterranean' />
+	
+	<!-- minor africa -->
+  
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='0' red='237' green='186' blue='126' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='1' red='211' green='153' blue='85' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='2' red='179' green='118' blue='126' tile_upgrade_id='farmland_mediterranean' />
+	<RESOURCE_TYPE building_superchain='rom_EconomicSecondaryMinor' level='2' red='144' green='86' blue='18' tile_upgrade_id='farmland_mediterranean' />
+
+	
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+  <!-- /////////////////////////////////////////////////This is the region specilties////////////////////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
+  
+	<!-- grain -->
+	
+  	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_grain' level='0' red='240' green='214' blue='135' tile_upgrade_id='grain' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_grain' level='1' red='228' green='193' blue='135' tile_upgrade_id='grain' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_grain' level='2' red='224' green='180' blue='47' tile_upgrade_id='grain' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_grain' level='3' red='201' green='151' blue='0' tile_upgrade_id='grain' />
+
+	<!-- limestone -->
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_limestone' level='1' red='190' green='175' blue='128' tile_upgrade_id='stone_level1' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_limestone' level='2' red='189' green='175' blue='128' tile_upgrade_id='stone_level2' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_limestone' level='3' red='188' green='175' blue='128' tile_upgrade_id='stone_level3' />
+	
+	<!-- marble -->	
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_marble' level='1' red='190' green='176' blue='128' tile_upgrade_id='stone_level1' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_marble' level='2' red='189' green='176' blue='128' tile_upgrade_id='stone_level2' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_marble' level='3' red='188' green='176' blue='128' tile_upgrade_id='stone_level3' />
+
+	<!-- olives -->
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_olives' level='0' red='124' green='213' blue='191' tile_upgrade_id='olives' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_olives' level='1' red='84' green='178' blue='155' tile_upgrade_id='olives' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_olives' level='2' red='43' green='135' blue='112' tile_upgrade_id='olives' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_olives' level='3' red='17' green='90' blue='72' tile_upgrade_id='olives' />
+
+	<!-- wine -->
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_wine' level='0' red='228' green='156' blue='182' tile_upgrade_id='wine' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_wine' level='1' red='226' green='106' blue='150' tile_upgrade_id='wine' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_wine' level='2' red='224' green='58' blue='119' tile_upgrade_id='wine' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_wine' level='3' red='217' green='12' blue='87' tile_upgrade_id='wine' />
+	
+	<!-- silver -->
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_silver' level='0' red='178' green='184' blue='202' tile_upgrade_id='silver' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_silver' level='1' red='178' green='184' blue='150' tile_upgrade_id='silver' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_silver' level='2' red='178' green='184' blue='100' tile_upgrade_id='silver' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_silver' level='3' red='178' green='184' blue='50' tile_upgrade_id='silver' />
+
+	<!-- iron -->
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_iron' level='0' red='120' green='67' blue='31' tile_upgrade_id='iron' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_iron' level='1' red='120' green='99' blue='78' tile_upgrade_id='iron' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_iron' level='2' red='120' green='136' blue='136' tile_upgrade_id='iron' />
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_iron' level='3' red='120' green='142' blue='14' tile_upgrade_id='iron' />
+	
+	<!-- gold -->
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_gold' level='0' red='255' green='238' blue='92' tile_upgrade_id='gold' />
+   	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_gold' level='1' red='255' green='202' blue='92' tile_upgrade_id='gold' />
+   	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_gold' level='2' red='255' green='202' blue='0' tile_upgrade_id='gold' />
+   	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_gold' level='3' red='0' green='202' blue='0' tile_upgrade_id='gold' />
+
+	<!-- unfinnished -->
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_timber' level='0' red='75' green='50' blue='38' tile_upgrade_id='timber' />
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_hides' level='0' red='220' green='139' blue='34' tile_upgrade_id='hides' />
+	
+	<!-- unused -->
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_fish' level='0' red='116' green='220' blue='227' tile_upgrade_id='fish' />
+  
+    <RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_glass' level='0' red='41' green='202' blue='178' tile_upgrade_id='glass' />
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_purple_dye' level='0' red='166' green='138' blue='85' tile_upgrade_id='textiles' />
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_silk' level='0' red='166' green='138' blue='85' tile_upgrade_id='textiles' />
+	
+	<RESOURCE_TYPE building_superchain='rom_GENERIC_city_minor_textiles' level='0' red='166' green='138' blue='85' tile_upgrade_id='textiles' />
+  
+</DYNAMIC_RESOURCES_DATABASE>

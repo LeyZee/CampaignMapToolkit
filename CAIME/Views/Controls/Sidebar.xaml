@@ -1,0 +1,164 @@
+﻿<UserControl x:Class="CAIME.Sidebar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAIME"
+             xmlns:controls="clr-namespace:CAIME.Controls"
+             mc:Ignorable="d"
+             ClipToBounds="True"
+             d:DesignHeight="720"
+             d:DesignWidth="250"
+             x:Name="SidebarControl">
+
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Templates/LayerTemplate.xaml"/>
+                <ResourceDictionary Source="../Templates/SwatchTemplate.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </UserControl.Resources>
+    
+    <ScrollViewer VerticalScrollBarVisibility="Hidden"
+                  HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Background="{StaticResource BackgroundDarkV1Brush}">
+            
+            <!-- Mini-map -->
+            <Expander x:Name="minimap"
+                      Header="Minimap"
+                      Style="{StaticResource DarkSidebarExpander}"
+                      IsExpanded="{Binding Source={x:Static local:AppStateContext.Instance},
+                                           Path=IsMinimapExpanded}">
+
+                <Canvas Height="{Binding MinimapHeight, FallbackValue=180}"
+                        Width="{Binding MinimapWidth,FallbackValue=229}"
+                        MouseLeftButtonUp="Canvas_MouseLeftButtonUp"
+                        ClipToBounds="True"
+                        MouseMove="Canvas_MouseMove"
+                        MouseWheel="Canvas_MouseWheel">
+
+                    <Rectangle Width="{Binding ViewFrameWidth, FallbackValue=239}"
+                               Height="{Binding ViewFrameHeight, FallbackValue=185}"
+                               Canvas.Left="{Binding ViewFrameX, FallbackValue=0}"
+                               Canvas.Top="{Binding ViewFrameY, FallbackValue=0}"
+                               Canvas.ZIndex="1"
+                               Stroke="Red"
+                               StrokeThickness="3"/>
+
+                    <Border Canvas.ZIndex="0"
+                            Background="{StaticResource BackgroundDarkV4Brush}">
+
+                        <Image Width="{Binding MinimapWidth, FallbackValue=229}"
+                               Height="{Binding MinimapHeight, FallbackValue=180}"
+                               Source="{Binding Minimap}"
+                               Stretch="Fill"
+                               RenderTransformOrigin="0.5,0.5" >
+
+                            <Image.RenderTransform>
+                                <ScaleTransform ScaleY="-1"/>
+                            </Image.RenderTransform>
+
+                        </Image>
+                    </Border>
+                    
+                </Canvas>
+            </Expander>
+            
+            <!-- Swatches -->
+            <Expander Header="Swatches"
+                      Style="{StaticResource DarkSidebarExpander}"
+                      IsExpanded="{Binding Source={x:Static local:AppStateContext.Instance},
+                                           Path=IsSwatchesExpanded}">
+                
+                <Border x:Name="swatches"
+                        Background="{StaticResource BackgroundDarkV4Brush}">
+                    
+                    <Grid x:Name="swatchesGrid"
+                            Visibility="Visible"
+                            Margin="5">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Rectangle Grid.Row="1"
+                                   Grid.Column="0"
+                                   Fill="{Binding SwatchColour, Converter={StaticResource ColourConverter}}"
+                                   Margin="1 1 6 1"/>
+                        
+                        <ComboBox x:Name="swatchesDropDown"
+                                  Grid.Row="1"
+                                  Grid.Column="1"
+                                  Style="{StaticResource DarkFlatComboBox}"
+                                  ItemsSource="{Binding ActiveSwatches}"
+                                  SelectedItem="{Binding ActiveSwatch, Mode=OneWayToSource}"
+                                  DisplayMemberPath="Name"
+                                  IsSynchronizedWithCurrentItem="True"
+                                  SelectedIndex="{Binding SwatchIndex, Mode=TwoWay}" />
+
+                    </Grid>
+                    <!--ItemsControl x:Name="swatchesItemsControl"
+                                    ItemTemplate="{StaticResource SwatchTemplate}"
+                                    ItemsSource="{Binding ActiveSwatches}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel HorizontalAlignment="Left" Margin="2"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </-->
+                </Border>
+            </Expander>
+            
+            <!-- Actions-->
+            <Expander Header="Actions"
+                      Style="{StaticResource DarkSidebarExpander}"
+                      IsExpanded="{Binding Source={x:Static local:AppStateContext.Instance},
+                                           Path=IsActionsExpanded}">
+
+                <Border x:Name="actions"
+                        Background="{StaticResource BackgroundDarkV4Brush}">
+
+                    <ContentControl Content="{Binding LayerControl}"
+                                    Height="Auto"
+                                    Margin="5"
+                                    VerticalAlignment="Top"
+                                    HorizontalAlignment="Right"/>
+                </Border>
+                
+            </Expander>
+            
+            <!-- Layers -->
+            <Expander Header="Layers"
+                      Style="{StaticResource DarkSidebarExpander}"
+                      IsExpanded="{Binding Source={x:Static local:AppStateContext.Instance},
+                                           Path=IsLayersExpanded}">
+                
+                <StackPanel x:Name="layers"
+                            Background="{StaticResource BackgroundDarkV4Brush}">
+
+                    <ItemsControl ItemTemplate="{StaticResource LayerTemplate}"
+                                  ItemsSource="{Binding Layers}">
+                        
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel Margin="5"
+                                                        Orientation="Vertical"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        
+                    </ItemsControl>
+                    
+                </StackPanel>
+            </Expander>
+            
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

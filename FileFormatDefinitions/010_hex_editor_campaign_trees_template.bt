@@ -1,0 +1,59 @@
+//------------------------------------------------
+//--- 010 Editor v11.0.1 Binary Template
+//
+//      File: Campaign trees binary template
+//   Authors: Mr.Jox (aka victimized.), justLeo
+//   Version: 1.0
+//   Purpose: Reverse engineering TOTAL WAR campaign map files for the purposes of creating fully functioning custom campaign maps or modifying already existing maps
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+local int i=0;
+
+typedef struct 
+{
+    uint64 MagicNumber;
+    uint32 VersionNumber;
+    float MapWidth;
+    float MapHeight;
+} HEADER <size=20>;
+
+typedef struct
+{
+    uint16 PathLength;
+    char Path[PathLength];
+} TREE_PATH;
+
+typedef struct
+{
+    float PositionX;
+    float PositionY;
+    float PositionZ;
+    byte IsRemovable;
+    byte RotationIndex;
+    byte SeasonMask;
+} TREE_INSTANCE <size=15>;
+
+typedef struct
+{
+  TREE_PATH TreePath;
+  struct INSTANCE_DATA
+  {
+    uint32 InstancesCount;
+    for (i=0;i<InstancesCount;++i)
+    {
+        TREE_INSTANCE InstanceData;
+    }
+  } InstanceData;
+} TREE_DATA;
+
+HEADER Header;
+
+struct CAMPAIGN_TREE
+{
+    uint32 TreesArrayCount;
+    TREE_DATA TreesData[TreesArrayCount];
+} CampaignTrees;

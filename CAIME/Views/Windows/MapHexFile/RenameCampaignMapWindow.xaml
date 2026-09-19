@@ -1,0 +1,97 @@
+﻿<Window x:Class="CAIME.Windows.RenameCampaignMapWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CAIME.Windows"
+        mc:Ignorable="d"
+        Title="Rename Campaign Map"
+        Height="Auto"
+        Width="Auto"
+        MinWidth="310"
+        MaxWidth="600"
+        MinHeight="165"
+        MaxHeight="165"
+        WindowStartupLocation="CenterOwner"
+        SizeToContent="WidthAndHeight"
+        WindowStyle="ToolWindow"
+        Background="{StaticResource BackgroundDarkV1Brush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" MinWidth="20" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" MaxWidth="400" />
+            <ColumnDefinition Width="*" MinWidth="20" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1"
+                   Grid.Column="1"
+                   Margin="0 5 10 5"
+                   Text="Old name:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+
+        <TextBox Grid.Row="1"
+                 Grid.Column="2"
+                 Margin="0 5"
+                 MinWidth="200"
+                 IsReadOnly="True"
+                 VerticalAlignment="Center"
+                 Text="{Binding OldMapName, FallbackValue=old_map_name}"
+                 Style="{StaticResource DarkTextBox}" />
+
+        <TextBlock Grid.Row="2"
+                   Grid.Column="1"
+                   Margin="0 5 10 5"
+                   Text="New name:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+
+        <TextBox Grid.Row="2"
+                 Grid.Column="2"
+                 Margin="0 5"
+                 MinWidth="200"
+                 VerticalAlignment="Center"
+                 Text="{Binding NewMapName, FallbackValue=new_map_name}"
+                 Style="{StaticResource DarkTextBox}" />
+
+        <Separator Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="4"
+                   Margin="0 5"
+                   Background="{StaticResource BackgroundDarkV3Brush}" />
+
+        <StackPanel Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    Margin="5"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right">
+
+            <Button x:Name="confirmButton"
+                    Content="Confirm"
+                    Padding="15 3"
+                    Margin="0 5 0 5"
+                    Style="{StaticResource DarkButton}"
+                    Click="ConfirmButton_Click"/>
+
+            <Button x:Name="cancelButton"
+                    Content="Cancel"
+                    IsCancel="True"
+                    Padding="15 3"
+                    Margin="2 5 0 5"
+                    Style="{StaticResource DarkButton}"
+                    Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

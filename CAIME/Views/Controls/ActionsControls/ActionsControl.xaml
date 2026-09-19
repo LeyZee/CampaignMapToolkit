@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="CAIME.Controls.ActionsControl"
+             x:Name="GroundTypeLayerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAIME.Controls"
+             mc:Ignorable="d"
+             ClipToBounds="True"
+             d:DesignHeight="80"
+             d:DesignWidth="250">
+
+    <StackPanel>
+        <Grid VerticalAlignment="Center"
+              HorizontalAlignment="Center">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0"
+                Grid.Column="0"
+                Content="Create"
+                Padding="5 3"
+                Margin="2 0"
+                Click="CreateNewSwatch_Click"
+                Style="{StaticResource DarkButton}" />
+
+        <Button Grid.Row="0"
+                Grid.Column="1"
+                Content="Rename"
+                Padding="5 3"
+                Margin="2 0"
+                Click="RenameSwatch_Click"
+                Style="{StaticResource DarkButton}" />
+
+        <Button Grid.Row="0"
+                Grid.Column="2"
+                Content="Remove"
+                Padding="5 3"
+                Margin="2 0"
+                Click="RemoveSwatch_Click"
+                Style="{StaticResource DarkButton}" />
+
+        <Button Grid.Row="0"
+                Grid.Column="3"
+                Content="Cleanup"
+                ToolTip="Removes unused swatches."
+                Padding="5 3"
+                Margin="2 0"
+                Click="CleanupSwatches_Click"
+                Style="{StaticResource DarkButton}" />
+
+        <!--Button Grid.Row="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Content="Change colour"
+                Padding="5 3"
+                Margin="2 4 2 0"
+                Click="ChangeSwatchColour_Click"
+                Style="{StaticResource DarkButton}" /-->
+
+        <Button Grid.Row="1"
+                Grid.Column="0"
+                Content="Validate"
+                Padding="5 3"
+                Margin="2 4 2 0"
+                Click="Validate_Click"
+                Style="{StaticResource DarkButton}" />
+
+        </Grid>
+    </StackPanel>
+</UserControl>

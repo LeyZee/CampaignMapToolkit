@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  SOLUTION: CampaignMapToolkit.sln
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Restore NuGet packages
+        run: nuget restore ${{ env.SOLUTION }}
+
+      - name: Restore SDK-style packages (CAIME.Tests)
+        run: dotnet restore CAIME.Tests\CAIME.Tests.csproj
+
+      - name: Build
+        run: msbuild ${{ env.SOLUTION }} /p:Configuration=Release
+
+      - name: Run tests
+        shell: pwsh
+        run: |
+          $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+          $vstest = & $vswhere -latest -products * `
+            -requires Microsoft.VisualStudio.PackageGroup.TestTools.Core `
+            -find "**\vstest.console.exe" | Select-Object -First 1
+          if (-not $vstest) { throw "vstest.console.exe not found" }
+          & $vstest "CAIME.Tests\bin\Release\net48\CAIME.Tests.dll"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

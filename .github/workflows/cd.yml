@@ -1,0 +1,88 @@
+name: CD
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write   # required for vpk to create/publish the GitHub Release
+
+env:
+  SOLUTION: CampaignMapToolkit.sln
+  APP_NAME: CampaignMapToolkit
+  BUILD_SCRIPT: build.bat
+  MAIN_EXE: CAIME.exe
+
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Restore NuGet packages
+        run: nuget restore ${{ env.SOLUTION }}
+
+      - name: Stamp assembly version from tag
+        shell: pwsh
+        run: |
+          $version = "${{ github.ref_name }}".TrimStart("v")  # turns v1.2.3 into 1.2.3
+          $filePath = "CAIME\Properties\AssemblyInfo.cs"
+          (Get-Content $filePath) `
+            -replace 'AssemblyVersion\("[^"]*"\)',       "AssemblyVersion(`"$version.0`")" `
+            -replace 'AssemblyFileVersion\("[^"]*"\)',   "AssemblyFileVersion(`"$version.0`")" `
+          | Set-Content $filePath
+
+      - name: Build
+        run: msbuild ${{ env.SOLUTION }} /p:Configuration=Release
+
+      - name: Run post-build script
+        run: ${{ env.BUILD_SCRIPT }}
+        shell: cmd
+
+      # Install the vpk CLI tool (requires .NET SDK, which is pre-installed on windows-latest)
+      - name: Install Velopack CLI (vpk)
+        run: dotnet tool install -g vpk
+
+      # Strip the leading 'v' from the tag to get a clean semver (e.g. v1.2.3 -> 1.2.3)
+      - name: Extract version number
+        id: version
+        shell: pwsh
+        run: |
+          $ver = "${{ github.ref_name }}".TrimStart("v")
+          echo "number=$ver" >> $env:GITHUB_OUTPUT
+
+      # Download the previous release so vpk can generate a delta (diff) package.
+      # On the very first release this will find nothing and that is fine.
+      - name: Download previous Velopack release
+        run: vpk download github --repoUrl https://github.com/${{ github.repository }} --token ${{ secrets.GITHUB_TOKEN }}
+
+      # Pack the release folder produced by build.bat into Velopack packages.
+      # --packId   : unique app identifier (shown in Add/Remove Programs)
+      # --packVersion : semver from the git tag
+      # --packDir  : the folder build.bat produced
+      # --mainExe  : the entry-point executable inside that folder
+      - name: Pack with Velopack
+        shell: pwsh
+        run: >
+          vpk pack
+          --packId ${{ env.APP_NAME }}
+          --packVersion ${{ steps.version.outputs.number }}
+          --packDir "${{ github.workspace }}\CampaignMapToolkit\CAIME"
+          --mainExe ${{ env.MAIN_EXE }}
+          --noPortable
+
+      # Publish the Velopack packages as a GitHub Release.
+      # This replaces the old Compress-Archive + softprops/action-gh-release steps.
+      - name: Upload Velopack release to GitHub
+        run: >
+          vpk upload github
+          --repoUrl https://github.com/${{ github.repository }}
+          --publish
+          --releaseName "Release ${{ github.ref_name }}"
+          --tag ${{ github.ref_name }}
+          --token ${{ secrets.GITHUB_TOKEN }}

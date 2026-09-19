@@ -1,0 +1,102 @@
+<Window x:Class="CAIME.Windows.PackFileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CAIME.Windows"
+        mc:Ignorable="d"
+        Title="Campaign Mod Packs"
+        Height="Auto"
+        Width="Auto"
+        MinWidth="500"
+        MaxWidth="750"
+        SizeToContent="WidthAndHeight"
+        WindowStyle="ThreeDBorderWindow"
+        WindowStartupLocation="CenterOwner"
+        Background="{StaticResource BackgroundDarkV1Brush}">
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="180" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   MaxWidth="700"
+                   TextWrapping="Wrap"
+                   Margin="0 0 0 10"
+                   Foreground="White"
+                   Text="List the .pack file(s) containing THIS campaign's own data - its region list, campaign definition, and anything else it overrides. This is separate from the vanilla pack and RPFM path you set under Settings &gt; Preferences (those apply to every project); these are specific to this campaign, stored alongside it in caime_metadata.json next to map.hex." />
+
+        <TextBlock Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   MaxWidth="700"
+                   TextWrapping="Wrap"
+                   Margin="0 0 0 10"
+                   FontStyle="Italic"
+                   Foreground="White"
+                   Text="Every pack listed here contributes its data - they are merged, not picked from. Anything none of these packs (or the vanilla pack) provide falls back to the Assembly Kit's own copy. Listed alphabetically by pack file name; that order only matters in the rare case where two packs define a table fragment with the exact same name, where the earlier one wins." />
+
+        <ListBox x:Name="packPathsList"
+                 Grid.Row="2"
+                 Grid.Column="0"
+                 Margin="0 0 5 0"
+                 Background="{StaticResource BackgroundDarkV3Brush}"
+                 Foreground="White"
+                 SelectionMode="Extended" />
+
+        <StackPanel Grid.Row="2"
+                    Grid.Column="1"
+                    Orientation="Vertical">
+
+            <Button Content="Add..."
+                    Padding="10 3"
+                    Margin="0 0 0 5"
+                    Style="{StaticResource DarkButton}"
+                    Click="Add_Click" />
+
+            <Button Content="Remove"
+                    Padding="10 3"
+                    Margin="0 0 0 0"
+                    Style="{StaticResource DarkButton}"
+                    Click="Remove_Click" />
+        </StackPanel>
+
+        <Separator Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Margin="0 10"
+                   Background="{StaticResource BackgroundDarkV3Brush}" />
+
+        <StackPanel Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+
+            <Button Content="Save"
+                    Padding="15 3"
+                    Margin="0 5 0 5"
+                    Style="{StaticResource DarkButton}"
+                    Click="Save_Click" />
+
+            <Button Content="Cancel"
+                    IsCancel="True"
+                    Padding="15 3"
+                    Margin="2 5 0 5"
+                    Style="{StaticResource DarkButton}"
+                    Click="Cancel_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

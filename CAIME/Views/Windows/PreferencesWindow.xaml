@@ -1,0 +1,466 @@
+﻿<Window x:Class="CAIME.Windows.PreferencesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CAIME.Windows"
+        mc:Ignorable="d"
+        Title="Preferences"
+        Height="Auto"
+        Width="Auto"
+        MinWidth="600"
+        MinHeight="200"
+        SizeToContent="WidthAndHeight"
+        WindowStyle="ThreeDBorderWindow"
+        WindowStartupLocation="CenterOwner"
+        Background="{StaticResource BackgroundDarkV1Brush}" >
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Hex spacing:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+
+        <TextBlock Grid.Row="0"
+                   Grid.Column="0"
+                   Margin="0 0 10 0"
+                   TextAlignment="Right"
+                   Text="{Binding ElementName=slider,
+                                  Path=Value,
+                                  StringFormat=N2}"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+
+        <Slider Grid.Row="0"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                x:Name="slider"
+                Minimum="0.0"
+                Maximum="0.2"
+                LargeChange="0.1"
+                TickFrequency="0.1"
+                Value="{Binding HexSpacing,
+                                Mode=TwoWay}"/>
+
+        <Separator Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   Margin="0 10"
+                   Background="{StaticResource BackgroundDarkV3Brush}" />
+
+        <TextBlock Grid.Row="2"
+                   Grid.Column="0"
+                   Text="Base game:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+        
+        <ComboBox Grid.Row="2"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="2"
+                  SelectionChanged="BaseGame_SelectionChanged"
+                  Style="{StaticResource DarkFlatComboBox}"
+                  ItemsSource="{Binding SupportedGamesList}"
+                  SelectedIndex="{Binding SelectedGameIndex,
+                                          Mode=TwoWay}" />
+
+        <TextBlock Grid.Row="3"
+                   Grid.Column="0"
+                   Margin="0 0 10 0"
+                   Text="Assembly kit path:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+
+        <Grid Grid.Row="3"
+              Grid.Column="1"
+              Grid.ColumnSpan="2">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBox x:Name="asskitPathBox"
+                     Grid.Column="0"
+                     Margin="0 5"
+                     Text="{Binding AssKitPath}"
+                     Style="{StaticResource DarkTextBox}" />
+
+            <Button Grid.Column="1"
+                    Content="Browse"
+                    Padding="5 0"
+                    Margin="0 5"
+                    Click="BrowseAssKit_Click"
+                    Style="{StaticResource DarkButton}" />
+
+        </Grid>
+
+        <Separator Grid.Row="4"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   Margin="0 10"
+                   Background="{StaticResource BackgroundDarkV3Brush}" />
+
+        <TextBlock Grid.Row="5"
+                   Grid.Column="0"
+                   Margin="0 0 10 0"
+                   Text="Log to file:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+        
+        <Grid Grid.Row="5"
+              Grid.Column="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton Grid.Column="0"
+                         Content="Enabled"
+                         Margin="5"
+                         IsChecked="{Binding LogToFile}"
+                         Foreground="White"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center" />
+
+            <RadioButton Grid.Column="1"
+                         Content="Disabled"
+                         Margin="5"
+                         IsChecked="{Binding LogToFile, Converter={StaticResource InverseBoolConverter}}"
+                         Foreground="White"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center" />
+
+        </Grid>
+
+        <TextBlock Grid.Row="6"
+                   Grid.Column="0"
+                   Margin="0 0 10 0"
+                   Text="Auto-save:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+        
+        <Grid Grid.Row="6"
+              Grid.Column="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton Grid.Column="0"
+                         Content="Enabled"
+                         Margin="5"
+                         IsChecked="{Binding IsAutoSave}"
+                         Foreground="White"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center" />
+
+            <RadioButton Grid.Column="1"
+                         Content="Disabled"
+                         Margin="5"
+                         IsChecked="{Binding IsAutoSave, Converter={StaticResource InverseBoolConverter}}"
+                         Foreground="White"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center" />
+
+        </Grid>
+
+        <TextBlock Grid.Row="7"
+                   Grid.Column="0"
+                   Margin="0 0 10 0"
+                   Text="Auto-backup:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+
+        <Grid Grid.Row="7"
+              Grid.Column="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton Grid.Column="0"
+                         Content="Enabled"
+                         Margin="5"
+                         IsChecked="{Binding IsAutoBackup}"
+                         Foreground="White"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center" />
+
+            <RadioButton Grid.Column="1"
+                         Content="Disabled"
+                         Margin="5"
+                         IsChecked="{Binding IsAutoBackup, Converter={StaticResource InverseBoolConverter}}"
+                         Foreground="White"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center" />
+
+        </Grid>
+
+        <TextBlock Grid.Row="8"
+                   Grid.Column="0"
+                   Margin="0 0 10 0"
+                   Text="Auto-backups to keep:"
+                   Foreground="White"
+                   VerticalAlignment="Center">
+            <TextBlock.ToolTip>
+                <ToolTip>
+                    <TextBlock MaxWidth="300"
+                               TextWrapping="Wrap"
+                               Text="How many of the newest auto-backups to keep in the project's backups folder. Older backups are deleted after each new one is written. Leave it at 0 to keep every backup." />
+                </ToolTip>
+            </TextBlock.ToolTip>
+        </TextBlock>
+
+        <TextBox Grid.Row="8"
+                 Grid.Column="1"
+                 Margin="5"
+                 VerticalAlignment="Center"
+                 Text="{Binding AutoBackupsToKeep, UpdateSourceTrigger=PropertyChanged}"
+                 ToolTip="0 keeps every backup."
+                 Style="{StaticResource DarkTextBox}" />
+
+        <TextBlock Grid.Row="9"
+                   Grid.Column="0"
+                   Margin="0 0 10 0"
+                   Text="Map data config auto-patch:"
+                   Foreground="White"
+                   VerticalAlignment="Center">
+            <TextBlock.ToolTip>
+                <ToolTip>
+                    <TextBlock MaxWidth="300"
+                               TextWrapping="Wrap"
+                               Text="When enabled, after a successful Map Data processing step, CAIME will automatically patch the generated map_data.esf using the map_data_config file referenced in caime_metadata.json (located alongside the opened map.hex file). The metadata file is created automatically by the Map Data Editor when you save after applying a config." />
+                </ToolTip>
+            </TextBlock.ToolTip>
+        </TextBlock>
+
+        <Grid Grid.Row="9"
+              Grid.Column="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton Grid.Column="0"
+                         Content="Enabled"
+                         Margin="5"
+                         IsChecked="{Binding IsMapDataConfigPostProcessEnabled}"
+                         Foreground="White"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center" />
+
+            <RadioButton Grid.Column="1"
+                         Content="Disabled"
+                         Margin="5"
+                         IsChecked="{Binding IsMapDataConfigPostProcessEnabled, Converter={StaticResource InverseBoolConverter}}"
+                         Foreground="White"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center" />
+
+        </Grid>
+
+        <!-- Database source (Assembly Kit / RPFM) -->
+        <Grid Grid.Row="10"
+              Grid.Column="0"
+              Grid.ColumnSpan="3">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Separator Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       Margin="0 10"
+                       Background="{StaticResource BackgroundDarkV3Brush}" />
+
+            <TextBlock Grid.Row="1"
+                       Grid.Column="0"
+                       Margin="0 0 10 0"
+                       Text="Database source:"
+                       Foreground="White"
+                       VerticalAlignment="Center" />
+
+            <ComboBox Grid.Row="1"
+                      Grid.Column="1"
+                      Grid.ColumnSpan="2"
+                      Style="{StaticResource DarkFlatComboBox}"
+                      ItemsSource="{Binding DatabaseSources}"
+                      SelectedItem="{Binding DatabaseSource, Mode=TwoWay}"
+                      ToolTip="Can be changed at any time, including while a project is open - it only takes effect the next time a project is opened." />
+
+            <TextBlock Grid.Row="2"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       Margin="0 3 0 0"
+                       FontStyle="Italic"
+                       Foreground="Gray"
+                       TextWrapping="Wrap"
+                       Text="Takes effect the next time a project is opened - changing it does not affect a project that is already open." />
+
+            <TextBlock Grid.Row="3"
+                       Grid.Column="0"
+                       Margin="0 0 10 0"
+                       Text="RPFM path:"
+                       Foreground="White"
+                       VerticalAlignment="Center"
+                       Visibility="{Binding RpfmSettingsVisibility}" />
+
+            <Grid Grid.Row="3"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="2"
+                  Visibility="{Binding RpfmSettingsVisibility}">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBox x:Name="rpfmPathBox"
+                         Grid.Column="0"
+                         Margin="0 5"
+                         Text="{Binding RpfmPath}"
+                         Style="{StaticResource DarkTextBox}" />
+
+                <Button Grid.Column="1"
+                        Content="Browse"
+                        Padding="5 0"
+                        Margin="0 5"
+                        Click="BrowseRpfm_Click"
+                        Style="{StaticResource DarkButton}" />
+
+            </Grid>
+
+            <TextBlock Grid.Row="4"
+                       Grid.Column="0"
+                       Margin="0 0 10 0"
+                       Text="Vanilla pack:"
+                       Foreground="White"
+                       VerticalAlignment="Center"
+                       Visibility="{Binding RpfmSettingsVisibility}">
+                <TextBlock.ToolTip>
+                    <ToolTip>
+                        <TextBlock MaxWidth="300"
+                                   TextWrapping="Wrap"
+                                   Text="The .pack file containing this game's vanilla database tables (for the selected Base game above), e.g. db.pack or data.pack depending on the game and patch. Used to fill in any table your modded pack doesn't provide - your modded pack always takes priority. Required when the database source is RPFM: without it, every table missing from your modded pack would silently fall back to the Assembly Kit's static copy instead of live pack data." />
+                    </ToolTip>
+                </TextBlock.ToolTip>
+            </TextBlock>
+
+            <Grid Grid.Row="4"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="2"
+                  Visibility="{Binding RpfmSettingsVisibility}">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBox x:Name="vanillaPackPathBox"
+                         Grid.Column="0"
+                         Margin="0 5"
+                         Text="{Binding VanillaPackPath}"
+                         Style="{StaticResource DarkTextBox}" />
+
+                <Button Grid.Column="1"
+                        Content="Browse"
+                        Padding="5 0"
+                        Margin="0 5"
+                        Click="BrowseVanillaPack_Click"
+                        Style="{StaticResource DarkButton}" />
+
+            </Grid>
+
+            <TextBlock Grid.Row="5"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       Margin="0 3 0 0"
+                       FontStyle="Italic"
+                       Foreground="Gray"
+                       TextWrapping="Wrap"
+                       Text="Your modded pack is set per project, not here - use Settings &gt; RPFM Workflow (menu bar, while a project is open)."
+                       Visibility="{Binding RpfmSettingsVisibility}" />
+
+            <TextBlock Grid.Row="6"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       Margin="0 5 0 0"
+                       FontWeight="SemiBold"
+                       Foreground="LightYellow"
+                       TextWrapping="Wrap"
+                       Text="No vanilla pack is set for this game - RPFM projects for it will open with database features (exports, some validators) disabled until one is set here."
+                       Visibility="{Binding VanillaPackWarningVisibility}" />
+        </Grid>
+
+        <Separator Grid.Row="11"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   Margin="0 10"
+                   Background="{StaticResource BackgroundDarkV3Brush}" />
+
+        <StackPanel Grid.Row="12"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right">
+
+            <Button x:Name="okButton"
+                    Content="Save"
+                    Padding="15 3"
+                    Margin="0 5 0 5"
+                    Style="{StaticResource DarkButton}"
+                    Click="OkButton_Click"/>
+
+            <Button x:Name="cancelButton"
+                    Content="Cancel"
+                    IsCancel="True"
+                    Padding="15 3"
+                    Margin="2 5 0 5"
+                    Style="{StaticResource DarkButton}"
+                    Click="CancelButton_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

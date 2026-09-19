@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50FBCE01-69CE-4F92-BD0E-A4C8E76F0C54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CAIME</RootNamespace>
+    <AssemblyName>CAIME</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CAIME.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommunityToolkit.Common, Version=8.3.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommunityToolkit.Common.8.3.2\lib\netstandard2.0\CommunityToolkit.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="CommunityToolkit.Diagnostics, Version=8.3.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommunityToolkit.Diagnostics.8.3.2\lib\netstandard2.0\CommunityToolkit.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="CommunityToolkit.Mvvm, Version=8.3.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommunityToolkit.Mvvm.8.3.2\lib\netstandard2.0\CommunityToolkit.Mvvm.dll</HintPath>
+    </Reference>
+    <Reference Include="Crc32.NET, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dc0b95cf99bf4e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crc32.NET.1.2.0\lib\net20\Crc32.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyotek.Drawing.BitmapFont, Version=1.0.0.0, Culture=neutral, PublicKeyToken=58daa28b0b2de221, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cyotek.Drawing.BitmapFont.2.0.4\lib\net472\Cyotek.Drawing.BitmapFont.dll</HintPath>
+    </Reference>
+    <Reference Include="HelixToolkit, Version=3.1.2.0, Culture=neutral, PublicKeyToken=52aa3500039caf0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\HelixToolkit.3.1.2\lib\net48\HelixToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="HelixToolkit.Geometry, Version=3.1.2.0, Culture=neutral, PublicKeyToken=52aa3500039caf0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\HelixToolkit.Geometry.3.1.2\lib\net48\HelixToolkit.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="HelixToolkit.Maths, Version=3.1.2.0, Culture=neutral, PublicKeyToken=52aa3500039caf0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\HelixToolkit.Maths.3.1.2\lib\net48\HelixToolkit.Maths.dll</HintPath>
+    </Reference>
+    <Reference Include="HelixToolkit.SharpDX, Version=3.1.2.0, Culture=neutral, PublicKeyToken=52aa3500039caf0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\HelixToolkit.SharpDX.3.1.2\lib\net48\HelixToolkit.SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="HelixToolkit.Wpf.SharpDX, Version=3.1.2.0, Culture=neutral, PublicKeyToken=52aa3500039caf0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\HelixToolkit.Wpf.SharpDX.3.1.2\lib\net48\HelixToolkit.Wpf.SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="Markdig, Version=0.22.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdig.0.22.0\lib\net452\Markdig.dll</HintPath>
+    </Reference>
+    <Reference Include="Markdig.Wpf, Version=0.5.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdig.Wpf.0.5.0.1\lib\net452\Markdig.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.3\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=4.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Common.4.11.0\lib\netstandard2.0\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=4.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.4.11.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=9.0.0.3, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.9.0.3\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=9.0.0.3, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.9.0.3\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAPICodePack-Core.1.1.0.2\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAPICodePack-Shell.1.1.0.0\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.ShellExtensions, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAPICodePack-Shell.1.1.0.0\lib\Microsoft.WindowsAPICodePack.ShellExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.D3DCompiler, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.D3DCompiler.4.2.0\lib\net45\SharpDX.D3DCompiler.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct2D1.4.2.0\lib\net45\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D11.4.2.0\lib\net45\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D9.4.2.0\lib\net45\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DXGI.4.2.0\lib\net45\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Mathematics.4.2.0\lib\net45\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.8.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.9.0.3\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Memory, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.2\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.8.0.0\lib\net462\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.1\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.7.0.0\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.RegularExpressions.4.3.1\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.2\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Velopack, Version=1.2.0.0, Culture=neutral, PublicKeyToken=5a523ff9c49fd93d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Velopack.1.2.0\lib\net472\Velopack.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Classes\Common\AssemblyKitPathAutoDetector.cs" />
+    <Compile Include="Classes\Common\Bits.cs" />
+    <Compile Include="Classes\Common\ChildProcess.cs" />
+    <Compile Include="Classes\Common\AutoBackupManager.cs" />
+    <Compile Include="Classes\Common\AutoSavesManager.cs" />
+    <Compile Include="Classes\Common\HexGridUtility.cs" />
+    <Compile Include="Classes\Common\CaimeMetadata.cs" />
+    <Compile Include="Classes\Common\Rpfm\BackupService.cs" />
+    <Compile Include="Classes\Common\Rpfm\DatabaseSource.cs" />
+    <Compile Include="Classes\Common\Rpfm\DatabaseTableConverter.cs" />
+    <Compile Include="Classes\Common\Rpfm\DatabaseTableProvider.cs" />
+    <Compile Include="Classes\Common\Rpfm\GameMappingProvider.cs" />
+    <Compile Include="Classes\Common\Rpfm\MetadataService.cs" />
+    <Compile Include="Classes\Common\Rpfm\RpfmRecoveryJournal.cs" />
+    <Compile Include="Classes\Common\Rpfm\RpfmService.cs" />
+    <Compile Include="Classes\Common\Rpfm\RpfmWorkflowSession.cs" />
+    <Compile Include="Classes\Common\PreferencesMigration.cs" />
+    <Compile Include="Classes\Tools\ShaderResolutionCorrector.cs" />
+    <Compile Include="Classes\Editor\ColourTable\PalFile.cs" />
+    <Compile Include="Classes\Editor\MapDataEditor\MapDataConfig.cs" />
+    <Compile Include="Classes\Editor\Painters\LinePainter.cs" />
+    <Compile Include="Classes\Editor\Painters\FloodFillPainter.cs" />
+    <Compile Include="Classes\Exporters\BaselineTilemapExporter.cs" />
+    <Compile Include="Classes\Exporters\Borders\SVGBordersExporter.cs" />
+    <Compile Include="Classes\Exporters\Borders\SVGRoadExporter.cs" />
+    <Compile Include="Classes\Exporters\DynamicResources\ProcessDynamicResources.cs" />
+    <Compile Include="Classes\Exporters\LayerToImageExporter.cs" />
+    <Compile Include="Classes\Importers\LayerImporter.cs" />
+    <Compile Include="Classes\MapHex\MapHexEditor.Climates.cs" />
+    <Compile Include="Classes\MapHex\MapHexEditor.cs" />
+    <Compile Include="Classes\MapHex\MapHexEditor.AreasOfInterest.cs" />
+    <Compile Include="Classes\MapHex\MapHexEditor.GroundTypes.cs" />
+    <Compile Include="Classes\MapHex\MapHexEditor.Regions.cs" />
+    <Compile Include="Classes\MapHex\MapHexFile.cs" />
+    <Compile Include="Classes\Common\UndoRedoManager.cs" />
+    <Compile Include="Classes\Common\HotkeyManager.cs" />
+    <Compile Include="Classes\Editor\Painters\BrushPainter.cs" />
+    <Compile Include="Classes\Editor\Painters\ViewportPainter.cs" />
+    <Compile Include="Classes\Editor\GridSubdivider.cs" />
+    <Compile Include="Classes\Exporters\LookupImageExporter.cs" />
+    <Compile Include="Classes\Exporters\MapData\MapDataConfigPostProcessor.cs" />
+    <Compile Include="Classes\Exporters\MapData\ProcessMapData.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Generators\BordersGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Generators\BordersCountPerTileGroupGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Generators\RestrictionsGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\PathfindingUtility.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Generators\BeachesGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Generators\BridgesGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Generators\HLCIGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Generators\MovementCostsGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Generators\RegionEdgesGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Generators\TileGroupsGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Heuristic\BestCaseCostTable.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Heuristic\BridgeCrossings.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Heuristic\HeuristicCacheGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Heuristic\SearchFrontier.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Heuristic\SearchGrid.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Heuristic\SearchLabel.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Heuristic\StepCostGrid.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Heuristic\TileGroupBorders.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Heuristic\TileGroupDistanceSearch.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Roads\HalfEdge.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Roads\RegionPairSets.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Roads\RoadSegmentBuilder.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Roads\RoadsGenerator.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Roads\RoadSegment.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Roads\SharedRouteLabels.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\Roads\TownRouteTracer.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\PathfindingExporter.cs" />
+    <Compile Include="Classes\Exporters\Pathfinding\PpdFile.cs" />
+    <Compile Include="Classes\MapHex\MapHexEditor.Attritions.cs" />
+    <Compile Include="Classes\Validators\AttritionsValidator.cs" />
+    <Compile Include="Classes\Validators\BeachesValidator.cs" />
+    <Compile Include="Classes\Validators\BridgesValidator.cs" />
+    <Compile Include="Classes\Validators\RiversValidator.cs" />
+    <Compile Include="Classes\Validators\TownSlotsValidator.cs" />
+    <Compile Include="Classes\Validators\RoadsValidator.cs" />
+    <Compile Include="Classes\Validators\ClimatesValidator.cs" />
+    <Compile Include="Classes\Validators\GroundTypesValidator.cs" />
+    <Compile Include="Classes\Validators\RegionsValidator.cs" />
+    <Compile Include="Classes\Validators\ImpassableValidator.cs" />
+    <Compile Include="Classes\Validators\SprawlValidator.cs" />
+    <Compile Include="Converters\InverseBoolConverter.cs" />
+    <Compile Include="Converters\RegionTownSizeConverter.cs" />
+    <Compile Include="Models\BorderEditor\BorderImage.cs" />
+    <Compile Include="Models\BorderEditor\BorderPart.cs" />
+    <Compile Include="Models\BorderEditor\BorderPoint.cs" />
+    <Compile Include="Models\BorderEditor\Shapes.cs" />
+    <Compile Include="Models\Database\DBAreaOfInterest.cs" />
+    <Compile Include="Models\Database\DBAttrition.cs" />
+    <Compile Include="Models\Database\DBCampaign.cs" />
+    <Compile Include="Models\Database\DBClimate.cs" />
+    <Compile Include="Models\Database\DBGroundType.cs" />
+    <Compile Include="Models\Database\DBRegionToProvince.cs" />
+    <Compile Include="Models\Database\DBRegion.cs" />
+    <Compile Include="Models\Database\DBRoad.cs" />
+    <Compile Include="Models\Database\PendingDataRow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\Database\XmlSchema.cs" />
+    <Compile Include="Converters\ColourConverter.cs" />
+    <Compile Include="Converters\ImageConverter.cs" />
+    <Compile Include="Models\Common\MessageItem.cs" />
+    <Compile Include="Models\Editor\Swatch.cs" />
+    <Compile Include="Models\Editor\Layer.cs" />
+    <Compile Include="Models\Editor\Tool.cs" />
+    <Compile Include="Models\Editor\Tools\BackImageTool.cs" />
+    <Compile Include="Models\Editor\Tools\ColorPickerTool.cs" />
+    <Compile Include="Models\Editor\Tools\LineTool.cs" />
+    <Compile Include="Models\Editor\Tools\FloodFillTool.cs" />
+    <Compile Include="Models\Editor\Tools\PaintTool.cs" />
+    <Compile Include="Models\Editor\Tools\PanTool.cs" />
+    <Compile Include="Models\Editor\Tools\ZoomTool.cs" />
+    <Compile Include="Models\MapDataEditor\MapDataRegion.cs" />
+    <Compile Include="Classes\Commands\ToolCommands.cs" />
+    <Compile Include="Classes\Common\Constants.cs" />
+    <Compile Include="Classes\Common\Utility.cs" />
+    <Compile Include="Classes\Common\AppStateContext.cs" />
+    <Compile Include="Classes\Exporters\Borders\BordersExporter.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\ConnectivityScanner.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\Curve.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\CurveFitter.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\HexGeometry.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\PathSearcher.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\PathSegmenter.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\RouteDomain.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\RoutePlanner.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\SplinePool.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\TradeConnectivity.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\TradeGrid.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\TradeGridBuilder.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\TradeRoute.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\TradeRoutesGeometry.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\TradeRoutesProcessor.cs" />
+    <Compile Include="Classes\Exporters\TradeNetwork\TradeRoutesWriter.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\Borders\BorderEditorViewModel.cs" />
+    <Compile Include="ViewModels\Borders\BorderExportOptionsViewModel.cs" />
+    <Compile Include="ViewModels\Borders\BorderVisualizationViewModel.cs" />
+    <Compile Include="ViewModels\Borders\RegionSelectionViewModel.cs" />
+    <Compile Include="ViewModels\Common\DatabaseViewModel.cs" />
+    <Compile Include="ViewModels\Common\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\Common\MenuViewModel.cs" />
+    <Compile Include="ViewModels\Common\ResizeViewModel.cs" />
+    <Compile Include="ViewModels\Common\PreferencesViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Actions\ActionsViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Actions\BorderActionsControlViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Actions\CreateSwatchViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Actions\ActionsControlViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Actions\RenameSwatchViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Actions\ChangeSwatchColourViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Actions\GroundTypeActionsControlViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Actions\SprawlActionsControlViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Actions\ImpassableActionsControlViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Actions\TradeRoutesActionsControlViewModel.cs" />
+    <Compile Include="ViewModels\Editor\Controls\ColourPickControlViewModel.cs" />
+    <Compile Include="ViewModels\Editor\EditorViewModel.cs" />
+    <Compile Include="ViewModels\Common\LoggerViewModel.cs" />
+    <Compile Include="ViewModels\Editor\MinimapViewModel.cs" />
+    <Compile Include="ViewModels\Editor\SwatchesViewModel.cs" />
+    <Compile Include="ViewModels\Editor\LayersViewModel.cs" />
+    <Compile Include="Classes\Common\NativeMethods.cs" />
+    <Compile Include="ViewModels\Base\ObservableObject.cs" />
+    <Compile Include="Classes\Editor\ColourTable\ColourTable.cs" />
+    <Compile Include="Models\HexMap\HexOrientation.cs" />
+    <Compile Include="Models\HexMap\OffsetCoordinates.cs" />
+    <Compile Include="Classes\Common\ProjectManager.cs" />
+    <Compile Include="Models\HexMap\Hex.cs" />
+    <Compile Include="Models\HexMap\HexLayout.cs" />
+    <Compile Include="ViewModels\Base\BaseViewModel.cs" />
+    <Compile Include="ViewModels\Editor\ToolbarViewModel.cs" />
+    <Compile Include="ViewModels\Editor\ViewportViewModel.cs" />
+    <Compile Include="ViewModels\Common\NewProjectViewModel.cs" />
+    <Compile Include="Classes\Commands\RelayCommand.cs" />
+    <Compile Include="ViewModels\Editor\SidebarViewModel.cs" />
+    <Compile Include="ViewModels\MapDataEditor\MapDataEditorViewModel.cs" />
+    <Compile Include="ViewModels\MapDataEditor\MapDataSettingsViewModel.cs" />
+    <Compile Include="ViewModels\Windows\ImportLayerViewModel.cs" />
+    <Compile Include="ViewModels\Windows\RenameCampaignMapViewModel.cs" />
+    <Compile Include="Views\Controls\ActionsControls\GroundTypeActionsControl.xaml.cs">
+      <DependentUpon>GroundTypeActionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ActionsControls\ActionsControl.xaml.cs">
+      <DependentUpon>ActionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ActionsControls\BorderActionsControl.xaml.cs">
+      <DependentUpon>BorderActionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ActionsControls\ImpassableActionsControl.xaml.cs">
+      <DependentUpon>ImpassableActionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ActionsControls\SprawlActionsControl.xaml.cs">
+      <DependentUpon>SprawlActionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ActionsControls\TradeRoutesActionControl.xaml.cs">
+      <DependentUpon>TradeRoutesActionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ActionsControls\RoadsActionsControl.xaml.cs">
+      <DependentUpon>RoadsActionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ActionsControls\RiversActionsControl.xaml.cs">
+      <DependentUpon>RiversActionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ActionsControls\BridgesActionsControl.xaml.cs">
+      <DependentUpon>BridgesActionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ActionsControls\BeachesActionsControl.xaml.cs">
+      <DependentUpon>BeachesActionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ActionsControls\TownSlotsActionsControl.xaml.cs">
+      <DependentUpon>TownSlotsActionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ColourPickControl.xaml.cs">
+      <DependentUpon>ColourPickControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\Editor.xaml.cs">
+      <DependentUpon>Editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\Logger.xaml.cs">
+      <DependentUpon>Logger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\MapDataSettings.xaml.cs">
+      <DependentUpon>MapDataSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\MenuControl.xaml.cs">
+      <DependentUpon>MenuControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\Sidebar.xaml.cs">
+      <DependentUpon>Sidebar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\Toolbar.xaml.cs">
+      <DependentUpon>Toolbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\Viewport.xaml.cs">
+      <DependentUpon>Viewport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\TextViewerWindow.xaml.cs">
+      <DependentUpon>TextViewerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\UserGuidesWindow.xaml.cs">
+      <DependentUpon>UserGuidesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\BorderEditorWindow.xaml.cs">
+      <DependentUpon>BorderEditorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\BordersExportOptionsWindow.xaml.cs">
+      <DependentUpon>BordersExportOptionsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\BrushPropertyWindow.xaml.cs">
+      <DependentUpon>BrushPropertyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\ExportLayersWindow.xaml.cs">
+      <DependentUpon>ExportLayersWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\ImportLayerWindow.xaml.cs">
+      <DependentUpon>ImportLayerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\ShaderResolutionCorrectorWindow.xaml.cs">
+      <DependentUpon>ShaderResolutionCorrectorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\LoggerWindow.xaml.cs">
+      <DependentUpon>LoggerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\MapDataEditor.xaml.cs">
+      <DependentUpon>MapDataEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\MapHexFile\ChangeSwatchColourWindow.xaml.cs">
+      <DependentUpon>ChangeSwatchColourWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\MapHexFile\CreateNewSwatchWindow.xaml.cs">
+      <DependentUpon>CreateNewSwatchWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\MapHexFile\RenameCampaignMapWindow.xaml.cs">
+      <DependentUpon>RenameCampaignMapWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\ResizeWindow.xaml.cs">
+      <DependentUpon>ResizeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\MapHexFile\RenameSwatchWindow.xaml.cs">
+      <DependentUpon>RenameSwatchWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\NewProjectWindow.xaml.cs">
+      <DependentUpon>NewProjectWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\PackFileWindow.xaml.cs">
+      <DependentUpon>PackFileWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\PreferencesWindow.xaml.cs">
+      <DependentUpon>PreferencesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\RegionSelectionWindow.xaml.cs">
+      <DependentUpon>RegionSelectionWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Styles\Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Converters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Expander.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Icons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\MenuStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\RadioButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ScrollBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\GroundTypeActionsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\ActionsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\BorderActionsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\ImpassableActionsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\SprawlActionsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\TradeRoutesActionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\RoadsActionsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\RiversActionsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\BridgesActionsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\BeachesActionsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\ActionsControls\TownSlotsActionsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\ColourPickControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\Editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\Logger.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\MapDataSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\MenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\Sidebar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\Toolbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Templates\LayerTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Templates\LogItemTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Templates\MapDataRegionTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Templates\RegionListItemTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Templates\SwatchTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Templates\ToolTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\Viewport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\TextViewerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\UserGuidesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\BorderEditorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\BordersExportOptionsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\BrushPropertyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\ExportLayersWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\ImportLayerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\ShaderResolutionCorrectorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Application\AppWindowAbout.cs" />
+    <Compile Include="Application\AppWindowChangelog.cs" />
+    <Compile Include="Application\AppWindowCredits.cs" />
+    <Compile Include="Application\AppWindowEula.cs" />
+    <Compile Include="Application\AppWindowGuides.cs" />
+    <Compile Include="Application\AppWindowLicense.cs" />
+    <Compile Include="Application\EulaAcceptance.cs" />
+    <Compile Include="Application\AppInfo.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cli\CliRunner.cs" />
+    <Compile Include="Cli\ConsoleManager.cs" />
+    <Compile Include="Views\Windows\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\Windows\LoggerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\MapDataEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\MapHexFile\ChangeSwatchColourWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\MapHexFile\CreateNewSwatchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\MapHexFile\RenameCampaignMapWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\ResizeWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Windows\MapHexFile\RenameSwatchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\NewProjectWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\PackFileWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Windows\PreferencesWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Windows\RegionSelectionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\CREDITS.txt">
+      <Link>CREDITS.txt</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\EULA.txt">
+      <Link>EULA.txt</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\LICENSE">
+      <Link>LICENSE</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <!-- User guide markdown files (source of truth lives in the repo docs folder).
+         Copied into bin\docs\ so the User Guides window can read them when run from
+         the IDE; the standalone release copy is handled by build.bat. -->
+    <Content Include="..\docs\*.md">
+      <Link>docs\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Selection_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Tools\Pan_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Tools\Brush_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Tools\Zoom_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\invisible_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\visible_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\dark_invisible_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\dark_visible_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Properties_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\3rdParty\Libs\TGASharpLib\TGASharpLib.csproj">
+      <Project>{7fa35d6c-f456-4286-9f78-ff17a076ddbf}</Project>
+      <Name>TGASharpLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EsfLibrary\EsfLibrary.csproj">
+      <Project>{a290e27b-4b04-4851-a17d-d0f6aee533a2}</Project>
+      <Name>EsfLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Tools\BackImg_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ClearImage_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Tools\FloodFill_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Border_editor_icon.ico" />
+    <Resource Include="Resources\Decrease_icon.png" />
+    <Resource Include="Resources\Increase_icon.png" />
+    <Resource Include="Resources\Invert_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Tools\Line_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Tools\ColorPicker_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Tools\Eraser_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Cursors\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\CommunityToolkit.Mvvm.8.3.2\build\CommunityToolkit.Mvvm.targets" Condition="Exists('..\packages\CommunityToolkit.Mvvm.8.3.2\build\CommunityToolkit.Mvvm.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\CommunityToolkit.Mvvm.8.3.2\build\CommunityToolkit.Mvvm.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CommunityToolkit.Mvvm.8.3.2\build\CommunityToolkit.Mvvm.targets'))" />
+  </Target>
+  <Target Name="BuildMapDataBuilderWin32" AfterTargets="Build">
+    <MSBuild Projects="$(MSBuildThisFileDirectory)..\MapDataBuilder\MapDataBuilder.vcxproj" Properties="Configuration=$(Configuration);Platform=Win32" Targets="Build" />
+  </Target>
+</Project>

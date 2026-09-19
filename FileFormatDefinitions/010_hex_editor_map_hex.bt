@@ -1,0 +1,202 @@
+//------------------------------------------------
+//--- 010 Editor v11.0.1 Binary Template
+//
+//      File: .ppd binary template
+//   Authors: Mr.Jox (aka victimized.), Maruka, Marthenil
+//   Version: 1.0
+//   Purpose: Reverse engineering TOTAL WAR campaign map files for the purposes of creating fully functioning custom campaign maps or modifying already existing maps
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+local int i=0;
+
+typedef struct
+{
+    uint32 Length;
+    char Data[Length];
+} ASCII_STRING <read=AsciiStringRead>;
+
+typedef struct 
+{
+    uint32 MajorVersion <format=hex>;
+    uint32 MinorVersion <format=hex>;
+
+    if (MinorVersion >= 0x12)
+    {
+        time64_t Timestamp;
+    }
+
+    ASCII_STRING GameName;
+    ASCII_STRING CampaignMapName;
+} HEADER;
+
+typedef struct
+{
+    uint32 Count;
+    for (i = 0; i < Count; ++i)
+    {
+        ASCII_STRING String;
+    }
+} STRING_ARRAY;
+
+typedef struct
+{
+    uint32 Unknown1;
+    uint32 Unknown2;
+    uint32 Unknown3;
+} UNKNOWN_WARHAMMER_STRUCT;
+
+typedef struct
+{
+    typedef uint32 COLOUR <read=ReadRGBA, bgcolor=(this)>;
+
+    uint32 ColoursCount;
+    for (i = 0; i < ColoursCount; ++i)
+    {
+        COLOUR Colour;
+    }
+
+} COLOUR_POOL;
+
+typedef struct
+{
+    typedef struct
+    {
+        byte Value1 <comment=LandSeaBeachCliffComment>;
+        byte Value2;
+        byte Value3;
+        byte Value4;
+        byte Value5;
+        byte Value6;
+        byte Value7;
+        byte Value8;
+    } HEX_ENTRY_8 <size=8>;
+
+    uint32 MapWidth;
+    uint32 MapHeight;
+
+    for (i = 0; i < MapWidth * MapHeight; ++i)
+    {
+        HEX_ENTRY_8 Hex;
+    }
+} HEX_DATA_8;
+
+typedef struct
+{
+    typedef struct
+    {
+        byte Value1 <comment=LandSeaBeachCliffComment>;
+        byte Value2;
+        byte Value3;
+        byte Value4;
+        byte Value5;
+        byte Value6;
+        byte Value7;
+        byte Value8;
+        byte Value9;
+        byte Reserved;
+        byte Reserved;
+        byte Reserved;
+        byte Reserved;
+        byte Reserved;
+        byte Reserved;
+        byte Value16;
+    } HEX_ENTRY_16 <size=16>;
+
+    uint32 MapWidth;
+    uint32 MapHeight;
+
+    for (i = 0; i < MapWidth * MapHeight; ++i)
+    {
+        HEX_ENTRY_16 Hex;
+    }
+} HEX_DATA_16;
+
+typedef struct
+{
+    uint32 Unknown1;
+    uint32 UnknownArraySize;
+    byte UnknownArrayData[UnknownArraySize];
+} UNKNOWN_WARHAMMER_STRUCT_2;
+
+typedef struct
+{
+    uint32 Checksum;
+} CRC32_CHECKSUM;
+
+string AsciiStringRead( ASCII_STRING &str )
+{
+    return str.Data;
+}
+
+string ReadRGBA( COLOUR &col )
+{
+    string s;
+    uchar red   = col;
+    uchar green = col >> 8;
+    uchar blue  = col >> 16;
+    uchar alpha = col >> 24;
+    SPrintf( s, "\nRed: %02d\nGreen: %02d\nBlue: %02d\nAlpha: %02d\nHex: #%02X%02X%02X%02X", red, green, blue, alpha, red, green, blue, alpha );
+    return s;
+}
+
+int32 ReadCol( COLOUR &col )
+{
+    return ((col.Red) | (col.Green << 8) | (col.Blue << 16) | (col.Alpha << 24));
+}
+
+string LandSeaBeachCliffComment( byte &val )
+{
+    if( (val & 3) == 3 )
+        return "Cliff hex";
+
+    if( (val & 1) == 1 )
+        return "Sea hex";
+
+    if( (val & 2) == 2 )
+        return "Beach hex";
+
+    return "Land hex";
+}
+
+//------------------------------------------------
+
+HEADER Header;
+STRING_ARRAY LandRegions;
+STRING_ARRAY SeaRegions;
+STRING_ARRAY LandGroundTypes;
+STRING_ARRAY SeaGroundTypes;
+STRING_ARRAY Climates;
+STRING_ARRAY Attritions;
+
+if (Header.MinorVersion == 0x13 || Header.MinorVersion == 0x14)
+{
+    STRING_ARRAY AreasOfInterest;
+}
+
+if (Header.MinorVersion == 0x12 || Header.MinorVersion == 0x14)
+{
+    UNKNOWN_WARHAMMER_STRUCT Unknown1;
+}
+
+COLOUR_POOL LandColours;
+COLOUR_POOL SeaColours;
+
+if (Header.MinorVersion == 0x0D)
+{
+    HEX_DATA_8 HexData;
+}
+else
+{
+    HEX_DATA_16 HexData;
+}
+
+if (Header.MinorVersion == 0x12 || Header.MinorVersion == 0x14)
+{
+    UNKNOWN_WARHAMMER_STRUCT_2 Unknown2;
+}
+
+CRC32_CHECKSUM Checksum;

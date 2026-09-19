@@ -1,0 +1,121 @@
+//------------------------------------------------
+//--- 010 Editor v11.0.1 Binary Template
+//
+//      File: .ppd binary template
+//   Authors: Mr.Jox (aka victimized.), Maruka, Marthenil
+//   Version: 1.0
+//   Purpose: Reverse engineering TOTAL WAR campaign map files for the purposes of creating fully functioning custom campaign maps or modifying already existing maps
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+local int i=0;
+local int j=0;
+local int k=0;
+
+typedef struct 
+{
+    uint64 MagicNumber;
+    uint32 VersionNmber;
+    uint32 LandRegionsCount;
+} PTD_HEADER <size=16>;
+
+typedef struct
+{
+    uint32 LandRegionNameLength;
+    char LandRegionName[LandRegionNameLength];
+} LAND_REGION_ENTRY;
+
+typedef struct
+{
+    uint16 X;
+    uint16 Y;
+} TUPLE;
+
+typedef struct
+{
+    uint32 RegionIndexSource;
+    uint32 RegionIndexDestination;
+    uint32 SegmentsCount;
+
+    struct SEGMENTS
+    {
+        for (k = 0; k < SegmentsCount; ++k)
+        {
+            uint32 SplineSegmentIndex;
+        }
+    } SplineSegments;
+} ROUTE;
+
+typedef struct
+{
+    uint32 Checksum;
+} CRC32_CHECKSUM;
+
+//------------------------------------------------
+
+PTD_HEADER Header;
+
+struct LAND_REGIONS_ARRAY
+{
+    for (i=0;i<Header.LandRegionsCount;++i)
+        LAND_REGION_ENTRY LandRegionEntry;
+} LandRegionsArray;
+
+struct SPLINES
+{
+    uint32 SegmentsCount;
+
+    for (i = 0; i < SegmentsCount; ++i)
+    {
+        struct SPLINE_SEGMENT
+        {
+            byte IsLand;
+            byte IsLandBridge;
+            byte DoesTerminateAtStart;
+            byte DoesTerminateAtEnd;
+
+            uint32 SplinesCount;
+
+            for (j = 0; j < SplinesCount; ++j)
+            {
+                struct
+                {
+                    TUPLE ControlEndPointStart;
+                    TUPLE ControlMidPoint1;
+                    TUPLE ControlMidPoint2;
+                    TUPLE ControlEndPointEnd;
+                } SplineControlPoints;
+            }
+        } SplineSegment;
+    }
+} SplinesData;
+
+struct ROUTES
+{
+    struct REGION_ROUTES
+    {
+        uint32 RoutesCount;
+        
+        for (j = 0; j < RoutesCount; ++j)
+        {
+            ROUTE Route;
+        }
+
+    } RegionRoutes;
+
+    struct PORT_ROUTES
+    {
+        uint32 RoutesCount;
+        
+        for (j = 0; j < RoutesCount; ++j)
+        {
+            ROUTE Route;
+        }
+
+    } PortRoutes;
+} RoutesData;
+
+CRC32_CHECKSUM Checksum;

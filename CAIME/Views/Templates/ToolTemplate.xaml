@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:CAIME">
+
+    <DataTemplate x:Key="ToolTemplate">
+        <RadioButton Style="{StaticResource DarkIconButton}"
+                     IsChecked="{Binding IsActive}"
+                     IsEnabled="{Binding IsEnabled}"
+                     ToolTip="{Binding ToolTip}"
+                     GroupName="Tools">
+
+            <Image Source="{Binding IconPath, Converter={StaticResource ImageConverter}}"
+                   RenderOptions.BitmapScalingMode="Fant"/>
+            
+        </RadioButton>
+    </DataTemplate>
+    
+</ResourceDictionary>

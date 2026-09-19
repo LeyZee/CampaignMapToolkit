@@ -1,0 +1,50 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:CAIME">
+
+    <DataTemplate x:Key="LayerTemplate">
+        <Border x:Name="layerBorder"
+                Padding="1"
+                BorderThickness="1"
+                Background="{StaticResource BackgroundDarkV5Brush}"
+                BorderBrush="{StaticResource BackgroundDarkV6Brush}">
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <CheckBox x:Name="layerVisibilityBox"
+                          Grid.Column="0"
+                          Style="{StaticResource VisibilityCheckBox}"
+                          IsChecked="{Binding IsVisible}"
+                          VerticalAlignment="Center"/>
+
+                <RadioButton x:Name="layerSource"
+                             Grid.Column="1"
+                             GroupName="Layers"
+                             IsChecked="{Binding IsActive}"
+                             Style="{StaticResource IconlessRadio}"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Stretch">
+                
+                    <TextBlock x:Name="layerText"
+                               Text="{Binding Name}"
+                               Foreground="White"
+                               VerticalAlignment="Center"
+                               Padding="10 0 0 0"/>
+                    
+                </RadioButton>
+            </Grid>
+        </Border>
+
+        <DataTemplate.Triggers>
+            <DataTrigger Binding="{Binding ElementName=layerSource, Path=IsChecked}" Value="True">
+                <Setter TargetName="layerBorder" Property="Background" Value="LightGray"/>
+                <Setter TargetName="layerText" Property="Foreground" Value="Black"/>
+                <Setter TargetName="layerVisibilityBox" Property="Style" Value="{StaticResource DarkVisibilityCheckBox}"/>
+            </DataTrigger>
+        </DataTemplate.Triggers>
+    </DataTemplate>
+</ResourceDictionary>

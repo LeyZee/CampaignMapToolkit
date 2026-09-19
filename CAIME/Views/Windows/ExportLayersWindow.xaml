@@ -1,0 +1,156 @@
+﻿<Window x:Class="CAIME.Views.Windows.ExportLayersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CAIME.Views.Windows"
+        mc:Ignorable="d"
+        Height="Auto"
+        Width="Auto"
+        MinWidth="350"
+        SizeToContent="WidthAndHeight"
+        Title="Export layers to images"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        WindowStyle="ThreeDBorderWindow"
+        WindowStartupLocation="CenterOwner"
+        Background="{StaticResource BackgroundDarkV1Brush}">
+
+    <Grid Margin="10">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical"
+                    HorizontalAlignment="Left">
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export ground types layer"
+                      Foreground="White"
+                      Name="cbGrounds"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export rivers layer"
+                      Foreground="White"
+                      Name="cbRivers"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export climates layer"
+                      Foreground="White"
+                      Name="cbClimates"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export attritions layer"
+                      Foreground="White"
+                      Name="cbAttritions"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export regions layer"
+                      Foreground="White"
+                      Name="cbRegions"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export region borders layer"
+                      Foreground="White"
+                      Name="cbRegionBorders"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export beaches layer"
+                      Foreground="White"
+                      Name="cbBeaches"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export bridges layer"
+                      Foreground="White"
+                      Name="cbBridges"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export town sprawl layer"
+                      Foreground="White"
+                      Name="cbSprawl"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export town slots layer"
+                      Foreground="White"
+                      Name="cbSlots"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export roads layer"
+                      Foreground="White"
+                      Name="cbRoads"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export trade routes layer"
+                      Foreground="White"
+                      Name="cbRoutes"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+
+            <CheckBox VerticalAlignment="Center"
+                      Content="Export impassable layer"
+                      Foreground="White"
+                      Name="cbNogo"
+                      Margin="5"
+                      Checked="LayerExportCheckBox_Checked"/>
+            
+        </StackPanel>
+
+        <ComboBox Grid.Row="0"
+                  Grid.Column="1"
+                  x:Name="ExportModeComboBox"
+                  VerticalAlignment="Bottom"
+                  Style="{StaticResource DarkFlatComboBox}"/>
+
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1"
+                    Orientation="Horizontal">
+            
+            <Button Content="Export"
+                    Padding="3"
+                    Margin="2"
+                    MinWidth="60"
+                    Click="ExportButton_Click"
+                    Style="{StaticResource DarkButton}"/>
+
+            <Button Content="Cancel"
+                    Padding="3"
+                    Margin="2"
+                    MinWidth="60"
+                    Click="CloseButton_Click"
+                    Style="{StaticResource DarkButton}"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

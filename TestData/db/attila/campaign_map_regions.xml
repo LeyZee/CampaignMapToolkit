@@ -1,0 +1,2080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot export_time="Sat 25. May 11:14:19 2024" revision="49" export_branch="D:/Games/steamapps/common/Total War Attila/assembly_kit/binaries" export_user="assembly.kit">
+<edit_uuid>4fcfe5bb-5cd8-4b42-ada3-4c1c90318598</edit_uuid>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959d9}" record_timestamp="1709833413333">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_aegyptus_alexandria</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959da}" record_timestamp="1709833413334">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_aegyptus_berenice</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959db}" record_timestamp="1709833413335">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_aegyptus_oxyrhynchus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959dc}" record_timestamp="1709833413336">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_aethiopia_adulis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959dd}" record_timestamp="1709833413337">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_aethiopia_aksum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959de}" record_timestamp="1709833413338">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_aethiopia_pachoras</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959df}" record_timestamp="1709833413339">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_africa_carthago</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959e0}" record_timestamp="1709833413340">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_africa_constantina</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959e1}" record_timestamp="1709833413341">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_africa_hadrumentum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959e2}" record_timestamp="1709833413342">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_aquitania_avaricum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959e3}" record_timestamp="1709833413343">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_aquitania_burdigala</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959e4}" record_timestamp="1709833413344">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_aquitania_elusa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959e5}" record_timestamp="1709833413345">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_arabia_felix_eudaemon</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959e6}" record_timestamp="1709833413346">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_arabia_felix_omana</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959e7}" record_timestamp="1709833413347">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_arabia_felix_zafar</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959e8}" record_timestamp="1709833413348">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_arabia_magna_dumatha</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959e9}" record_timestamp="1709833413349">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_arabia_magna_hira</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959ea}" record_timestamp="1709833413350">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_arabia_magna_yathrib</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959eb}" record_timestamp="1709833413351">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_armenia_duin</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959ec}" record_timestamp="1709833413352">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_armenia_payttakaran</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959ed}" record_timestamp="1709833413353">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_armenia_tosp</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959ee}" record_timestamp="1709833413354">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_asia_cyzicus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959ef}" record_timestamp="1709833413355">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_asia_ephesus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959f0}" record_timestamp="1709833413356">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_asia_synnada</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959f1}" record_timestamp="1709833413357">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_asorstan_arbela</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959f2}" record_timestamp="1709833413358">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_asorstan_ctesiphon</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959f3}" record_timestamp="1709833413359">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_asorstan_meshan</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959f4}" record_timestamp="1709833413360">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_baetica_corduba</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959f5}" record_timestamp="1709833413361">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_baetica_hispalis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959f6}" record_timestamp="1709833413362">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_baetica_malaca</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959f7}" record_timestamp="1709833413363">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_belgica_augusta_treverorum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959f8}" record_timestamp="1709833413364">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_belgica_colonia_agrippina</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959f9}" record_timestamp="1709833413365">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_belgica_durocorterum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959fa}" record_timestamp="1709833413366">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_bithynia_amasea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959fb}" record_timestamp="1709833413367">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_bithynia_ancyra</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959fc}" record_timestamp="1709833413368">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_bithynia_nicomedia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959fd}" record_timestamp="1709833413369">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_britannia_inferior_eboracum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959fe}" record_timestamp="1709833413370">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_britannia_inferior_lindum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c53959ff}" record_timestamp="1709833413371">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_britannia_inferior_segontium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a00}" record_timestamp="1709833413372">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_britannia_superior_camulodunon</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a01}" record_timestamp="1709833413373">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_britannia_superior_corinium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a02}" record_timestamp="1709833413374">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_britannia_superior_londinium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a03}" record_timestamp="1709833413375">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_caledonia_et_hibernia_eblana</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a04}" record_timestamp="1709833413376">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_caledonia_et_hibernia_eildon</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a05}" record_timestamp="1709833413377">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_caledonia_et_hibernia_tuesis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a06}" record_timestamp="1709833413378">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_cappadocia_caesarea_eusebia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a07}" record_timestamp="1709833413379">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_cappadocia_melitene</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a08}" record_timestamp="1709833413380">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_cappadocia_trapezus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a09}" record_timestamp="1709833413381">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_carthaginensis_carthago_nova</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a0a}" record_timestamp="1709833413382">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_carthaginensis_segobriga</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a0b}" record_timestamp="1709833413383">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_carthaginensis_toletum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a0c}" record_timestamp="1709833413384">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_caucasia_gabala</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a0d}" record_timestamp="1709833413385">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_caucasia_kotais</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a0e}" record_timestamp="1709833413386">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_caucasia_mtskheta</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a0f}" record_timestamp="1709833413387">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_cilicia_iconium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a10}" record_timestamp="1709833413388">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_cilicia_myra</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a11}" record_timestamp="1709833413389">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_cilicia_tarsus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a12}" record_timestamp="1709833413390">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_dacia_apulum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a13}" record_timestamp="1709833413391">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_dacia_petrodava</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a14}" record_timestamp="1709833413392">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_dacia_romula</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a15}" record_timestamp="1709833413393">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_dalmatia_domavia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a16}" record_timestamp="1709833413394">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_dalmatia_salona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a17}" record_timestamp="1709833413395">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_dalmatia_siscia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a18}" record_timestamp="1709833413396">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_dardania_scupi</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a19}" record_timestamp="1709833413397">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_dardania_serdica</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a1a}" record_timestamp="1709833413398">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_dardania_viminacium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a1b}" record_timestamp="1709833413399">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_frisia_angulus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a1c}" record_timestamp="1709833413400">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_frisia_flevum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a1d}" record_timestamp="1709833413401">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_frisia_tulifurdum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a1e}" record_timestamp="1709833413402">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_gallaecia_asturica</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a1f}" record_timestamp="1709833413403">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_gallaecia_bracara</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a20}" record_timestamp="1709833413404">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_gallaecia_brigantium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a21}" record_timestamp="1709833413405">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_germania_aregelia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a22}" record_timestamp="1709833413406">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_germania_lupfurdum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a23}" record_timestamp="1709833413407">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_germania_uburzis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a24}" record_timestamp="1709833413408">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_germano_sarmatia_duna</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a25}" record_timestamp="1709833413409">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_germano_sarmatia_oium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a26}" record_timestamp="1709833413410">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_germano_sarmatia_palteskja</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a27}" record_timestamp="1709833413411">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_gothiscandza_ascaucalis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a28}" record_timestamp="1709833413412">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_gothiscandza_gothiscandza</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a29}" record_timestamp="1709833413413">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_gothiscandza_rugion</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a2a}" record_timestamp="1709833413414">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_hercynia_budorgis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a2b}" record_timestamp="1709833413415">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_hercynia_casurgis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a2c}" record_timestamp="1709833413416">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_hercynia_nitrahwa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a2d}" record_timestamp="1709833413417">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_hyperborea_kariskos</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a2e}" record_timestamp="1709833413418">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_hyperborea_moramar</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a2f}" record_timestamp="1709833413419">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_hyperborea_sylis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a30}" record_timestamp="1709833413420">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_italia_fiorentia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a31}" record_timestamp="1709833413421">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_italia_neapolis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a32}" record_timestamp="1709833413422">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_italia_roma</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a33}" record_timestamp="1709833413423">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_khwarasan_abarshahr</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a34}" record_timestamp="1709833413424">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_khwarasan_harey</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a35}" record_timestamp="1709833413425">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_khwarasan_merv</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a36}" record_timestamp="1709833413426">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_libya_augila</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a37}" record_timestamp="1709833413427">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_libya_paraetonium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a38}" record_timestamp="1709833413428">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_libya_ptolemais</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a39}" record_timestamp="1709833413429">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_liguria_genua</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a3a}" record_timestamp="1709833413430">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_liguria_mediolanum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a3b}" record_timestamp="1709833413431">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_liguria_segusio</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a3c}" record_timestamp="1709833413432">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_lugdunensis_lugdunum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a3d}" record_timestamp="1709833413433">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_lugdunensis_rotomagus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a3e}" record_timestamp="1709833413434">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_lugdunensis_turonum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a3f}" record_timestamp="1709833413435">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_lusitania_emerita_augusta</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a40}" record_timestamp="1709833413436">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_lusitania_olisipo</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a41}" record_timestamp="1709833413437">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_lusitania_pax_augusta</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a42}" record_timestamp="1709833413438">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_macedonia_corinthus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a43}" record_timestamp="1709833413439">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_macedonia_dyrrhachium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a44}" record_timestamp="1709833413440">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_macedonia_thessalonica</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a45}" record_timestamp="1709833413441">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_magna_graecia_rhegium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a46}" record_timestamp="1709833413442">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_magna_graecia_syracusae</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a47}" record_timestamp="1709833413443">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_magna_graecia_tarentum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a48}" record_timestamp="1709833413444">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_makran_harmosia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a49}" record_timestamp="1709833413445">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_makran_phra</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a4a}" record_timestamp="1709833413446">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_makran_pura</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a4b}" record_timestamp="1709833413447">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_mauretania_caesarea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a4c}" record_timestamp="1709833413448">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_mauretania_tamousiga</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a4d}" record_timestamp="1709833413449">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_mauretania_tingis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a4e}" record_timestamp="1709833413450">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_maxima_sequanorum_argentoratum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a4f}" record_timestamp="1709833413451">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_maxima_sequanorum_octodurus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a50}" record_timestamp="1709833413452">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_maxima_sequanorum_vesontio</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a51}" record_timestamp="1709833413453">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_media_atropatene_ecbatana</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a52}" record_timestamp="1709833413454">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_media_atropatene_ganzaga</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a53}" record_timestamp="1709833413455">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_media_atropatene_rhaga</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a54}" record_timestamp="1709833413456">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_mediterraneus_occidentalis_ajax</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a55}" record_timestamp="1709833413457">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_mediterraneus_occidentalis_caralis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a56}" record_timestamp="1709833413458">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_mediterraneus_occidentalis_palma</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a57}" record_timestamp="1709833413459">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_mediterraneus_orientalis_constantia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a58}" record_timestamp="1709833413460">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_mediterraneus_orientalis_gortyna</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a59}" record_timestamp="1709833413461">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_mediterraneus_orientalis_rhodes</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a5a}" record_timestamp="1709833413462">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_narbonensis_aquae_sextiae</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a5b}" record_timestamp="1709833413463">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_narbonensis_narbo</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a5c}" record_timestamp="1709833413464">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_narbonensis_vienna</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a5d}" record_timestamp="1709833413465">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_osroene_amida</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a5e}" record_timestamp="1709833413466">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_osroene_edessa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a5f}" record_timestamp="1709833413467">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_osroene_nisibis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a60}" record_timestamp="1709833413468">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_palaestinea_aelia_capitolina</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a61}" record_timestamp="1709833413469">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_palaestinea_aila</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a62}" record_timestamp="1709833413470">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_palaestinea_nova_trajana_bostra</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a63}" record_timestamp="1709833413471">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_pannonia_savaria</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a64}" record_timestamp="1709833413472">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_pannonia_sirmium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a65}" record_timestamp="1709833413473">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_pannonia_sopianae</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a66}" record_timestamp="1709833413474">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_persis_behdeshir</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a67}" record_timestamp="1709833413475">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_persis_siraf</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a68}" record_timestamp="1709833413476">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_persis_stakhr</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a69}" record_timestamp="1709833413477">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_phazania_cydamus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a6a}" record_timestamp="1709833413478">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_phazania_dimmidi</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a6b}" record_timestamp="1709833413479">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_phazania_garama</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a6c}" record_timestamp="1709833413480">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_raetia_et_noricum_augusta_vindelicorum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a6d}" record_timestamp="1709833413481">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_raetia_et_noricum_iuvavum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a6e}" record_timestamp="1709833413482">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_raetia_et_noricum_virunum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a6f}" record_timestamp="1709833413483">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_sarmatia_asiatica_anacopia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a70}" record_timestamp="1709833413484">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_sarmatia_asiatica_samandar</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a71}" record_timestamp="1709833413485">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_sarmatia_asiatica_tanais</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a72}" record_timestamp="1709833413486">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_sarmatia_europaea_chersonessus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a73}" record_timestamp="1709833413487">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_sarmatia_europaea_gelonus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a74}" record_timestamp="1709833413488">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_sarmatia_europaea_olbia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a75}" record_timestamp="1709833413489">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_scandza_alabu</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a76}" record_timestamp="1709833413490">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_scandza_hafn</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a77}" record_timestamp="1709833413491">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_scandza_hrefnesholt</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a78}" record_timestamp="1709833413492">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_scythia_bolghar</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a79}" record_timestamp="1709833413493">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_scythia_ra</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a7a}" record_timestamp="1709833413494">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_scythia_sarai</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a7b}" record_timestamp="1709833413495">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_spahan_issatis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a7c}" record_timestamp="1709833413496">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_spahan_spahan</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a7d}" record_timestamp="1709833413497">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_spahan_susa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a7e}" record_timestamp="1709833413498">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_syria_antiochia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a7f}" record_timestamp="1709833413499">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_syria_emesa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a80}" record_timestamp="1709833413500">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_syria_tyrus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a81}" record_timestamp="1709833413501">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_tarraconensis_caesaraugusta</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a82}" record_timestamp="1709833413502">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_tarraconensis_pompaelo</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a83}" record_timestamp="1709833413503">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_tarraconensis_tarraco</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a84}" record_timestamp="1709833413504">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_terra_incognita</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a85}" record_timestamp="1709833413505">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_thracia_constantinopolis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a86}" record_timestamp="1709833413506">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_thracia_marcianopolis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a87}" record_timestamp="1709833413507">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_thracia_trimontium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a88}" record_timestamp="1709833413508">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_transcarpathia_arheimar</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a89}" record_timestamp="1709833413509">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_transcarpathia_belz</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a8a}" record_timestamp="1709833413510">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_transcarpathia_leopolis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a8b}" record_timestamp="1709833413511">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_transcaspia_dahistan</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a8c}" record_timestamp="1709833413512">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_transcaspia_kath</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a8d}" record_timestamp="1709833413513">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_transcaspia_siahkuh</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a8e}" record_timestamp="1709833413514">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_tripolitana_leptis_magna</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a8f}" record_timestamp="1709833413515">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_tripolitana_macomades</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a90}" record_timestamp="1709833413516">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_tripolitana_sabrata</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a91}" record_timestamp="1709833413517">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_venetia_aquileia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a92}" record_timestamp="1709833413518">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_venetia_ravenna</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a93}" record_timestamp="1709833413519">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_reg_venetia_verona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a94}" record_timestamp="1709833413520">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_danuvius</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a95}" record_timestamp="1709833413521">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_lake</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a96}" record_timestamp="1709833413522">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_adriaticum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a97}" record_timestamp="1709833413523">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_aegaeum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a98}" record_timestamp="1709833413524">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_aegyptum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a99}" record_timestamp="1709833413525">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_africum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a9a}" record_timestamp="1709833413526">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_balearicum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a9b}" record_timestamp="1709833413527">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_caspium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a9c}" record_timestamp="1709833413528">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_cilicium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a9d}" record_timestamp="1709833413529">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_gallicum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a9e}" record_timestamp="1709833413530">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_hibernicum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395a9f}" record_timestamp="1709833413531">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_ibericum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aa0}" record_timestamp="1709833413532">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_illyricum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aa1}" record_timestamp="1709833413533">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_indicum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aa2}" record_timestamp="1709833413534">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_internum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aa3}" record_timestamp="1709833413535">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_ionium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aa4}" record_timestamp="1709833413536">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_phoenicum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aa5}" record_timestamp="1709833413537">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_rubrum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aa6}" record_timestamp="1709833413538">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_sarmaticum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aa7}" record_timestamp="1709833413539">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_suebicum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aa8}" record_timestamp="1709833413540">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_mare_tyrrhenum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aa9}" record_timestamp="1709833413541">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_nilos</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aaa}" record_timestamp="1709833413542">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_oceanus_atlanticus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aab}" record_timestamp="1709833413543">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_oceanus_britannicus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aac}" record_timestamp="1709833413544">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_oceanus_gallicus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aad}" record_timestamp="1709833413545">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_oceanus_germanicus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aae}" record_timestamp="1709833413546">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_pontus_cimmerius</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395aaf}" record_timestamp="1709833413547">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_pontus_euxinus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395ab0}" record_timestamp="1709833413548">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_pontus_thracius</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395ab1}" record_timestamp="1709833413549">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_propontis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395ab2}" record_timestamp="1709833413550">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_rhenus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395ab3}" record_timestamp="1709833413551">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_sinus_arabicus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395ab4}" record_timestamp="1709833413552">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_sinus_codanus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395ab5}" record_timestamp="1709833413553">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_sinus_persicus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395ab6}" record_timestamp="1709833413554">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_sinus_syracusanus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395ab7}" record_timestamp="1709833413555">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_syrtis_major</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{955ff3ca-9f01-4685-ac40-6922c5395ab8}" record_timestamp="1709833413556">
+<campaign_map>main_attila_map</campaign_map>
+<region>att_sea_syrtis_minor</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{99cd9470-3b92-4738-a1eb-96413290dd29}" record_timestamp="1426536618888">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_africa_proconsularis_carthago</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{52dfa67f-cf96-4874-92ce-44a2e807fc0f}" record_timestamp="1426536618938">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_africa_proconsularis_hippo_diarrhytus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6e0c0a44-423a-424c-98c6-64fd7a8dc766}" record_timestamp="1426536648287">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_africa_proconsularis_thuburbo</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{70b02504-e20f-4f6e-9122-9e7eb8117328}" record_timestamp="1426536619038">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_apulia_et_calabria_hydruntum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{2ef69074-c1aa-45f3-bc43-c54138ba7a2c}" record_timestamp="1426536619088">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_apulia_et_calabria_sipontum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{658e6a57-8b11-4ab4-85d1-dd5c47a3ba7b}" record_timestamp="1426536619138">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_apulia_et_calabria_tarentum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{a00d62e3-b6cb-4857-8811-c3662606c77d}" record_timestamp="1426536619188">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_aquitaine_arvernis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{94e83fa9-3b3d-4d16-b1a7-7f74e955dab4}" record_timestamp="1426536619239">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_aquitaine_avaricum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{4c691421-4c13-47e7-82c7-df23dc61567a}" record_timestamp="1426536619290">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_aquitaine_lemonum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0d8325fe-1e0c-49a3-b470-7cd4d36ec52a}" record_timestamp="1426536619491">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_austrasia_augustobona_tricassium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{2c23abcb-738b-408a-91e0-409efbbfe344}" record_timestamp="1426536619540">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_austrasia_mettis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{1dbf3208-bfd4-430c-9e10-a5a4d35c91c8}" record_timestamp="1426536619592">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_austrasia_remorum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{a2f2ed06-6c92-40ae-9308-6ee9a28f6500}" record_timestamp="1426536619643">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_baetica_gades</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{d2c81962-e9f8-4a93-a65e-2e25ea7b6964}" record_timestamp="1426536619694">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_baetica_hispalis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{5bcb41be-887e-4a40-b609-f6fa48fc09b7}" record_timestamp="1426536619746">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_baetica_malaca</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{66d5d554-6dfc-4cf0-990d-326d400c215b}" record_timestamp="1426536619804">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_brittany_gwened</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{ea422519-4660-45fa-99e6-16cf653f47cf}" record_timestamp="1426536619854">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_brittany_osismorum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{9ad041e1-d582-459a-ad76-5e6301e3e583}" record_timestamp="1426536619910">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_brittany_riedonum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{56bbb983-3ee5-434c-ae2b-70f6e5718cc5}" record_timestamp="1426536619966">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_burgundy_besantio</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e94471aa-479d-41b5-9f2c-817f64c9807e}" record_timestamp="1426536620016">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_burgundy_valentia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f2f2b753-a794-4716-b663-9c3a8487a7c1}" record_timestamp="1426536620066">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_burgundy_vienne</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{fa8ac07a-f5eb-4660-97a3-d9cff70a8bab}" record_timestamp="1426536620116">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_byzacena_hadrumentum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{3675333f-1335-4077-88fe-49d6ffe89dd9}" record_timestamp="1426536648955">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_byzacena_sufetula</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{4d7f0e3d-bda1-42d3-b67d-be073b8c282f}" record_timestamp="1426536649623">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_byzacena_thysdrus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{df3ab286-a4d4-44aa-a26e-57ccda138b18}" record_timestamp="1426536620266">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_campania_et_samnium_beneventum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{763d75be-dd8b-4000-b0b7-5fcdb7f7c4e5}" record_timestamp="1426536620316">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_campania_et_samnium_corfinium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{4ec80da3-ca47-4e04-9a3c-bf741c6dc4fe}" record_timestamp="1426536620367">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_campania_et_samnium_neapolis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{73202b8a-b99e-4aaa-b6c1-6b94156df573}" record_timestamp="1426536620417">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_cantabria_legio</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{7773777c-516f-4146-8445-d7b5728d87d1}" record_timestamp="1426536620467">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_cantabria_pompaelo</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{2ab17c1d-3262-4701-9c1d-e8f3ac170015}" record_timestamp="1426536620517">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_cantabria_portus_victoriae</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{19b1ccce-6b07-49ed-a57d-1776da64d7c1}" record_timestamp="1426536620568">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_carthaginensis_carthago_nova</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e174d192-a955-4ad7-9d9b-c100c182b1a1}" record_timestamp="1426536620618">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_carthaginensis_ilici</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b71df870-b28b-4f6e-9e63-aeb8d604c7bf}" record_timestamp="1426536620669">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_carthaginensis_libisosa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{20dd0f4f-98e9-4776-8f9b-91311d2c1a82}" record_timestamp="1426536620719">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_celtiberia_complutum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{4c817571-c317-4553-97e9-ffd2afefd658}" record_timestamp="1426536620769">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_celtiberia_segovia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{4bac0876-5df9-477f-8c31-47f31aac3a9c}" record_timestamp="1426536620821">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_celtiberia_tolentum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{9f1dad1b-94ca-49fa-832f-3f81140b193e}" record_timestamp="1426536620871">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_dalmatia_narona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{aa78898c-3959-4dab-87a2-01f6656859e7}" record_timestamp="1426536620921">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_dalmatia_salona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{da07e396-c99e-443f-8dd5-1083e68bb025}" record_timestamp="1426536620970">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_dalmatia_tarsatica</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0e1750b0-556b-40ad-96f9-54ba1f553460}" record_timestamp="1426536621120">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_epirus_nova_dyrrachium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{8d1ea2b9-66f5-42bf-97cd-84787b665855}" record_timestamp="1427298173112">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_epirus_nova_nicopolis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{69644d13-250a-4ed9-9ffe-a2260967f1cb}" record_timestamp="1427298172811">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_epirus_nova_photiki</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{351b20c1-243d-4e0a-b61a-67bb55b8ccc8}" record_timestamp="1426536621170">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_flaminia_et_picenum_bononia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{5db5e156-86ab-4364-ab81-0b646398a7b9}" record_timestamp="1426536621220">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_flaminia_et_picenum_pisaurum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{d59fe949-0284-4ad5-865a-16fe3e53704b}" record_timestamp="1426536621271">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_flaminia_et_picenum_ravenna</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{1b6d3867-f7c0-40c1-98e9-31ed2e4de600}" record_timestamp="1426536621322">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_gallaecia_astorga</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{64f53207-7027-472e-b55f-1de5fead78ab}" record_timestamp="1426536621372">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_gallaecia_bracara</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{65e03ba1-3fb9-446e-a6b9-efd60e48f340}" record_timestamp="1426536621422">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_gallaecia_brigantium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{2c847eeb-d648-4f43-aeb7-256079715ace}" record_timestamp="1426536621473">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_italia_cosa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{57405344-8c6d-4d75-a4b3-c40e41d6d17f}" record_timestamp="1426536621523">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_italia_reate</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6d05365a-4ea3-4b73-8844-16c627552b26}" record_timestamp="1426536621573">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_italia_roma</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e69555bd-c3bd-4646-8458-8e3a2de83b34}" record_timestamp="1426536621623">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_liguria_augusta_taurinorum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{64cfce78-9dd6-437f-99d3-8e56be9117b0}" record_timestamp="1426536621673">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_liguria_genua</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0e7de2bb-3138-4a71-bc25-98e9472245d1}" record_timestamp="1426536621723">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_liguria_mediolanum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{523a266c-3b13-4763-8c1f-4c35ee00ec4d}" record_timestamp="1426536621774">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_lucania_et_brutii_crotona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{fc13959c-d85c-4c3b-a6d6-2f37a7f41dcc}" record_timestamp="1426536621825">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_lucania_et_brutii_rhegium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{114bee07-420b-44f7-b37f-2a1c88799d9f}" record_timestamp="1426536621876">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_lucania_et_brutii_thurii</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{cec1784a-1064-41d0-896c-69dbad6287a8}" record_timestamp="1426536621927">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_lusitania_aeminium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{53cdf12e-8ddf-424b-a7fa-d990d642aacf}" record_timestamp="1426536621977">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_lusitania_emerita</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0a79d389-1dc1-4895-a40f-df21dbdbd697}" record_timestamp="1426536622027">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_lusitania_olissipo</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e34368d6-5b31-4c33-b8ff-c455ba8b91d9}" record_timestamp="1426536622076">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_mauretania_caesariensis_caesarea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0135684c-df69-491a-a0a6-f2eff2f190c9}" record_timestamp="1426536622126">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_mauretania_caesariensis_cartenna</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{45fbc9ae-8d99-4030-91eb-3e459aa3106d}" record_timestamp="1426536622176">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_mauretania_caesariensis_pomaria</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{04322428-3b35-48df-806f-9627127f9ede}" record_timestamp="1429271908074">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_mauretania_sitifensis_cirta</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b07b1e74-a27e-4d0d-b9c5-50e25b071c6b}" record_timestamp="1426536622277">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_mauretania_sitifensis_sitifis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{8ab3a413-6411-4322-9ddb-bff0d3f2f241}" record_timestamp="1426536622327">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_mauretania_sitifensis_tipasa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{10809230-42dc-43ef-92a9-7a83898d6b6f}" record_timestamp="1426536622378">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_mauretania_tingitana_anfa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{03adc689-ddbc-4990-80e4-4bbf73f00cf9}" record_timestamp="1426536622428">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_mauretania_tingitana_rusaddir</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{7bb66e83-0527-40d7-bdc9-2baf8ee81967}" record_timestamp="1426536622478">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_mauretania_tingitana_tingis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b0b15d82-3112-4ea6-84b0-a2b6c39e9c78}" record_timestamp="1426536622528">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_neustria_paris</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{a05fdbc7-0612-4fa9-bc6d-2b4c0dcf1c9a}" record_timestamp="1426536622579">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_neustria_portus_namnetum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{38bcbcfb-65bd-4b13-a24c-d24fcadc0989}" record_timestamp="1426536622629">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_neustria_turonorum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{40f310e3-e82d-4651-bee0-af745fd76b14}" record_timestamp="1426536622679">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_novempopulania_aquensium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{be396325-27b4-4a3a-a515-19213febd770}" record_timestamp="1426536622729">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_novempopulania_burdigala</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{dd947741-54d4-4ba0-aa88-f4abec408c6c}" record_timestamp="1426536622779">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_novempopulania_tolosa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e8a6c5bc-4954-47eb-9b98-950a734f06e7}" record_timestamp="1426536622830">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_picenum_suburbicarium_ancona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{3e4ab763-b583-41ff-be88-c39c4a06bf06}" record_timestamp="1426536622880">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_picenum_suburbicarium_asculum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6c3a7366-4eb0-41db-ac19-770281573754}" record_timestamp="1426536622938">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_picenum_suburbicarium_spoletum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{35f18bea-bb31-4d21-941c-9372de49ef30}" record_timestamp="1426536622988">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_praeualitana_doclea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{67a94b1b-8008-4f94-88cf-395f3cc275a0}" record_timestamp="1426536623037">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_praeualitana_epidaurum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{d8ecfb6e-3b25-4716-a4e7-3b10aaf61613}" record_timestamp="1426536623087">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_praeualitana_lissus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{be79a826-eecd-41ec-8562-b2f90b470680}" record_timestamp="1426536623137">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_provence_massilia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{342091af-5009-4f4a-a8b8-e06c85de22a8}" record_timestamp="1426536623187">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_provence_nikaia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{974bb473-b8a4-46df-8b4b-3ba370a9adb2}" record_timestamp="1426536623238">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_provence_vapincum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{5cac4306-02ae-4bb1-9366-a9d90e1408fc}" record_timestamp="1426536623289">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_sardinia_et_corsica_aleria</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f15c310c-1ec7-443e-a471-757aa3e795c4}" record_timestamp="1426536623340">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_sardinia_et_corsica_caralis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{5ef8c19b-0728-483a-ab72-8b35b9b9cad7}" record_timestamp="1426536623390">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_sardinia_et_corsica_turris</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{933a982a-ff54-4bf2-8049-a34824f75600}" record_timestamp="1426536623441">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_septimania_elne</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6f4a5783-9a70-4c0f-81d5-57891e754e30}" record_timestamp="1426536623492">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_septimania_narbonne</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e3f6f71a-975b-4a63-8fb3-498455e142ea}" record_timestamp="1426536623542">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_septimania_nimes</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{251ad6a1-e07d-4cfe-8a27-c650cac6e92b}" record_timestamp="1426536623594">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_sicilia_agrigentum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{4ebed76d-350c-4e70-84f2-13f14348d08a}" record_timestamp="1426536623643">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_sicilia_panormus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c1ad94d3-7d72-46fa-a06e-9860a9dedf8e}" record_timestamp="1426536623693">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_sicilia_syracuse</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0865ca90-0a4c-4512-8f31-52731e5ca88c}" record_timestamp="1426536623743">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_tarraconensis_barcino</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{a3cf6108-cd0a-4b48-9bc9-4a83b5b7060d}" record_timestamp="1426536623793">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_tarraconensis_caesaraugusta</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{caaf35e1-6fdc-4369-87de-e7b6405ce2c7}" record_timestamp="1426536623844">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_tarraconensis_valentia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0423528c-c583-4df7-aa06-bccb65508e45}" record_timestamp="1426536623894">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_terra_incognita</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{9e14c33d-f173-4693-9580-c99aeb2ed4ef}" record_timestamp="1429271860911">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_terra_incognita_transalpina</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{626b6d22-31b3-4f8d-aa51-b53d92bb9bb5}" record_timestamp="1426536623944">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_tuscia_et_umbria_arretium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c5ddaac5-88f3-4b46-8375-3d6e02dab302}" record_timestamp="1426536623994">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_tuscia_et_umbria_faesulae</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{817e6601-7952-4047-8e2b-80b8a95536a3}" record_timestamp="1426536624043">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_tuscia_et_umbria_pisae</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{a18fd1a6-aec5-4158-be39-83543e623214}" record_timestamp="1426536624094">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_venetia_et_histria_aquileia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c68767f2-3c8a-4d3f-afb9-befc1d6949f4}" record_timestamp="1426536624144">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_venetia_et_histria_patavium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{45b39169-0aa5-482d-b90e-bda399a80a92}" record_timestamp="1426536624194">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_venetia_et_histria_verona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c7240010-7aee-45c5-806d-d2af9aa67bc1}" record_timestamp="1426536624243">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_zeugitana_bulla_regia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{d693a074-a3b1-4ace-920a-ecf0a4552667}" record_timestamp="1426536624295">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_zeugitana_hippo_regis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{cb9c31ec-0c9f-4e00-9c4c-b36d9c982a2c}" record_timestamp="1427298173407">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_reg_zeugitana_thagaste</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c480d500-bd69-41c1-bfcb-07b94d4dfe39}" record_timestamp="1427298174062">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_lake</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b935cd6e-f320-457c-a7a2-fd54aa4b473e}" record_timestamp="1426536624395">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_mare_adriaticum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{05427864-9c5d-4e71-94c9-f376e1dece64}" record_timestamp="1426536624445">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_mare_africum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6b413f5a-97ff-4d83-ba38-fd3bd40f03d9}" record_timestamp="1426536624495">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_mare_balearicum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{92d9753a-a292-44d2-a96d-090ccd2e23f4}" record_timestamp="1426536624545">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_mare_gallicum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0033c12a-de9e-43e7-817e-0cec77a67cc6}" record_timestamp="1426536624595">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_mare_ibericum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{277b79bd-bc79-476b-b74e-7bc32fcec54c}" record_timestamp="1428490036608">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_mare_incognita</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c73cc377-403b-41d1-ba85-154579424bab}" record_timestamp="1426536624645">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_mare_internum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f1fdbd9a-5da6-48da-aa17-5750872b4552}" record_timestamp="1426536624695">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_mare_ionium</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{14fa11a1-a5fd-4bb8-a975-fb06c199d435}" record_timestamp="1426536624745">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_mare_syrtis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{92e81224-53d2-46bb-bb0c-aeb20e71c53f}" record_timestamp="1426536624795">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_mare_tyrrhenum</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{530bfe19-a417-4045-ae73-e96f4d3963f2}" record_timestamp="1426536624846">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_oceanus_atlanticus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c6624a6b-bdd9-43f1-b21c-a968d58e09ff}" record_timestamp="1426536624895">
+<campaign_map>bel_attila_map</campaign_map>
+<region>bel_sea_oceanus_gallicus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{ab6f0ee1-792e-4028-8571-67bf89543d09}" record_timestamp="1437143300789">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_al_andalus_almeria</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{dda1225a-7a3b-488d-bceb-0d8044c18dbf}" record_timestamp="1437143300790">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_al_andalus_cordoba</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{ae8ea48e-9bd4-4df8-a154-69fe9cfb0dbb}" record_timestamp="1437143300790">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_al_andalus_jaen</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{4720845b-8004-41c9-9924-39bd771db66a}" record_timestamp="1437143300791">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_alemannia_basel</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{5f0dc31f-437f-43f2-a67b-d19aaa1844bb}" record_timestamp="1437143300792">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_alemannia_chur</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{2f19224c-8d0d-41e2-8936-aeab59c3643a}" record_timestamp="1437143300792">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_alemannia_konstanz</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{456e4234-acc9-4844-9bce-80400197d880}" record_timestamp="1437143300793">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_angria_buraburg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{a5904390-d75a-444d-b1cc-7e61791b9522}" record_timestamp="1437143300794">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_angria_erfurt</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c0e1c0a3-a641-4f80-9d51-1de80a5be7ca}" record_timestamp="1437143300795">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_angria_paderborn</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c42355a6-2a07-4abc-a0eb-a634460b778f}" record_timestamp="1437143300795">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_austrasia_aachen</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6b683612-a6ba-499f-ba90-83e44068d866}" record_timestamp="1437143300796">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_austrasia_metz</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{8025384a-4c1e-434f-9bd0-cce3c5433ce4}" record_timestamp="1437143300797">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_austrasia_trier</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{a6844b8a-9aef-4b4c-ae6d-57054d6a7256}" record_timestamp="1437143300797">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_bavaria_augsburg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{5c39d358-a840-4511-8f43-2ca6dfa4af86}" record_timestamp="1437143300798">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_bavaria_passau</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{8888dd96-f103-4761-8b04-a6cc0706bfed}" record_timestamp="1437143300799">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_bavaria_regensburg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{3d92a35d-744e-44b4-a16f-4503af05ea7a}" record_timestamp="1437143300799">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_benevento_bari</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e62b4231-465f-4e5b-a0d0-f13bd4c09f3c}" record_timestamp="1437143300800">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_benevento_benevento</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{585dcf4a-e351-4a8a-b870-78eebe21f950}" record_timestamp="1437143300801">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_benevento_salerno</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0954fec6-4f69-46f7-b7f9-43fa2311d448}" record_timestamp="1437143300802">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_bohemia_dresden</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{56abd639-6391-4363-a133-9697266f5580}" record_timestamp="1437143300802">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_bohemia_iglau</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{203dd842-e038-48fc-b32c-479887fe71fe}" record_timestamp="1437143300803">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_bohemia_praha</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{5b57db51-6117-4111-9c9a-6439a816f7bc}" record_timestamp="1437143300804">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_brittany_quimper</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{9c67c7c3-7d40-4954-817e-e27728a9b5ca}" record_timestamp="1437143300805">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_brittany_st_malo</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{ae3c322f-0f9e-4d23-a2d9-eb75ed7d4c5b}" record_timestamp="1437143300805">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_brittany_vannes</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{305cbca8-f663-4afb-a24e-faec1a3a1740}" record_timestamp="1437143300806">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_burgundy_geneve</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b5ee270a-5f8f-4698-b289-1ac7c6051512}" record_timestamp="1437143300806">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_burgundy_grenoble</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{778f651c-2f6c-498a-b7a1-5e5710a82216}" record_timestamp="1437143300807">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_burgundy_lyon</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0dfeb9db-724f-40a8-9883-54003a1e6382}" record_timestamp="1437143300808">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_calabria_kroton</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0b9e1696-a84e-487c-bf8f-988306e6a1ac}" record_timestamp="1437143300809">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_calabria_region</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e001c154-9f36-4a54-b9c0-d3d551e44f0b}" record_timestamp="1437143300809">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_calabria_taranto</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{223920de-9605-474b-b13b-aae90ed1fa19}" record_timestamp="1437143300810">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_carinthia_lorch</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e1b722a6-b900-4043-8b2f-9dcc80bd504e}" record_timestamp="1437143300811">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_carinthia_salzburg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{52c7da64-23c0-4153-94d7-9dc00ab81716}" record_timestamp="1437143300812">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_carinthia_wien</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{fc730899-1b64-437e-af81-7f5d4b98e3f9}" record_timestamp="1437143300812">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_croatia_jadra</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{ad515a30-d0fc-4265-9640-326d0918748e}" record_timestamp="1437143300813">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_croatia_ptuj</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{2616b64a-5e0f-4b34-8527-eb98e132be07}" record_timestamp="1437143300814">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_croatia_sisak</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6b24a3aa-cdf2-4b35-99a0-e8b175540ce8}" record_timestamp="1437143300814">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_east_aquitaine_arvernis</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{ea05da1b-3d9a-4428-922f-1e136948ce36}" record_timestamp="1437143300815">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_east_aquitaine_autun</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{db3d528a-03c7-4f0d-abb3-356ac279d06f}" record_timestamp="1437143300816">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_east_aquitaine_rodez</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{2de08b70-c2d2-44d2-b570-ea366e0f4dc6}" record_timestamp="1437143300816">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_east_neustria_amiens</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{1f4cf254-6b02-47bb-b567-adaf5d12548a}" record_timestamp="1437143300817">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_east_neustria_reims</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{2fdb53b9-d1ae-45ea-8a20-ab8d1f41eef6}" record_timestamp="1437143300818">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_east_neustria_troyes</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0403528f-a917-457a-92d8-112e05b39b37}" record_timestamp="1437143300819">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_eastphalia_halberstadt</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{8580b97e-57d1-4c79-ab7a-bb7a0bf8060f}" record_timestamp="1437143300819">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_eastphalia_hildesheim</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f7c15d71-e78c-414b-8955-e57df1c7fae2}" record_timestamp="1437143300820">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_eastphalia_magdeburg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{1ec52985-11db-4f19-a399-11b065dccb26}" record_timestamp="1437143300821">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_exarchate_ancona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e0980e29-d799-4453-92e1-3330a618f472}" record_timestamp="1437143300821">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_exarchate_bologna</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{45c55359-2830-46db-b6da-8cc34c66ecda}" record_timestamp="1437143300822">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_exarchate_ravenna</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c60251ca-6b91-4543-8515-a32e84a0c107}" record_timestamp="1437143300823">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_france_chatres</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{95930ec5-0b64-419c-878c-8298c689c909}" record_timestamp="1437143300824">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_france_paris</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b7d811cc-728b-4dd5-90e3-2add29978a65}" record_timestamp="1437143300824">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_france_tours</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{57392bcf-45e0-471f-982e-cabc5e7affa2}" record_timestamp="1437143300825">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_franconia_frankfurt</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b8b033f9-8f04-4a91-b35c-678f707979b0}" record_timestamp="1437143300826">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_franconia_hallstadt</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{04e0236d-ed8e-41f4-b63f-55738a6c1282}" record_timestamp="1437143300826">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_franconia_wurzburg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{ffce8561-75c2-467a-a73a-67690e09f763}" record_timestamp="1437143300827">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_frisia_boulogne</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{8e19c413-a426-455e-ad71-c194254d0242}" record_timestamp="1437143300828">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_frisia_ghent</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{bf318841-fd63-4ebb-9aef-b1e87f9de236}" record_timestamp="1437143300828">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_frisia_utrecht</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f113cd64-8230-405e-b34e-c22e799eef70}" record_timestamp="1437143300829">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_friuli_aquileia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f18c4296-247c-4aad-aee0-e6cdb527b094}" record_timestamp="1437143300830">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_friuli_venezia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{9ac53c76-5536-4abd-8363-f2980977f3db}" record_timestamp="1437143300830">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_friuli_verona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{515ef098-2fb9-496b-81a7-5188e3b231f6}" record_timestamp="1437143300831">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_gallicia_lugo</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{36fce9c4-dd18-4d41-8c9b-14a47685e0a8}" record_timestamp="1437143300832">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_gallicia_oviedo</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{34d4c97f-c2f4-4219-ae63-8a17c7466d92}" record_timestamp="1437143300833">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_gallicia_santiago</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f0c4b82b-3bb8-4637-a4d6-0dee9e4f1df4}" record_timestamp="1437143300833">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_gascony_agen</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{1b54419c-cb78-4d27-abff-527628c5d0ff}" record_timestamp="1437143300834">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_gascony_bayonne</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{1bc9e3c0-51dc-459b-bafd-4984e0469f76}" record_timestamp="1437143300835">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_gascony_bordeaux</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{d05d2210-882c-463c-a6f2-595a00906235}" record_timestamp="1437143300835">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_gharb_al_anadalus_beja</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{583e75fb-2e7c-4e4e-a505-e20c4ed482f2}" record_timestamp="1437143300836">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_gharb_al_anadalus_cadiz</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{83fa0ee3-622d-4952-81e5-792c428f799a}" record_timestamp="1437143300837">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_gharb_al_anadalus_seville</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{3d6de822-7eeb-4170-83b7-e8685d7fa420}" record_timestamp="1437143300838">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_jutland_aarhus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{fc7435ce-a566-4d6b-a1d9-964b3473eae5}" record_timestamp="1437143300838">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_jutland_hedeby</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{bbd70210-6dd9-46ec-ae80-4850f9e6cf99}" record_timestamp="1437143300839">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_jutland_ribe</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c981278f-f291-4667-a559-323799c4164f}" record_timestamp="1437143300840">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_leon_leon</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c8c80104-5742-4f30-8ac4-54b4cfeaf16d}" record_timestamp="1437143300841">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_leon_santander</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{da6cabd8-43e4-4d10-b8c2-d2cc99fa0c28}" record_timestamp="1437143300841">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_leon_valladoid</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{53fa7e00-307c-4733-aa3e-e81bd4279b73}" record_timestamp="1437143300842">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_lombardy_genova</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{51fda7c8-5173-4c61-b9ce-0b50431929f9}" record_timestamp="1437143300843">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_lombardy_pavia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{9df88923-faa8-4b84-afa3-808f1990ce55}" record_timestamp="1437143300844">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_lombardy_pisa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{8bf4e1ac-1326-4356-8366-f8ad230299a3}" record_timestamp="1437143300844">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_marca_hispanica_barcelona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f67996d7-5ac3-41da-b62a-3e092925aea8}" record_timestamp="1437143300845">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_marca_hispanica_girona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{5b10eb32-f0d8-475f-a0b5-5f9db1edab29}" record_timestamp="1437143300846">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_marca_hispanica_tarragona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f751d065-2a62-4528-9dc8-d05f4d726091}" record_timestamp="1437143300847">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_marca_inferior_braga</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f92cccae-5cce-46fb-b502-31f2ceadb100}" record_timestamp="1437143300847">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_marca_inferior_coimbra</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{533860d9-dfe1-4451-a690-36e387229d3e}" record_timestamp="1437143300848">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_marca_inferior_lisbon</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{76ecf7f5-8413-4bad-ae6e-1ddb752f31d4}" record_timestamp="1437143300849">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_marca_media_caceres</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e467c52e-e489-48f8-b292-3f6d3d46bb62}" record_timestamp="1437143300850">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_marca_media_merida</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{9f7640e0-499b-4d14-bbc3-aabd508aa8e6}" record_timestamp="1437143300850">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_marca_media_salamanca</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{59470874-ed75-4b63-b0b5-d747f849eeca}" record_timestamp="1437143300851">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_mercia_chester</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{51afdf23-e95c-4c3b-96f1-e35fd16815b1}" record_timestamp="1437143300852">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_mercia_lichfield</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{ca92fd5a-0039-40da-a86b-ee34d06dd2b8}" record_timestamp="1437143300853">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_mercia_lincoln</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{17214533-bbe8-4a1e-84aa-650a9c21c805}" record_timestamp="1437143300853">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_moravia_mosaburg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{2da34cde-0e93-4d33-847d-4756c6044798}" record_timestamp="1437143300854">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_moravia_nitra</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{503ef011-da4a-49f7-92c2-300d5c064ceb}" record_timestamp="1437143300855">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_moravia_savaria</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6ecb900a-2195-4fb8-a016-2d4da2f68dfe}" record_timestamp="1437143300856">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_munster_cashel</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{3cf517a5-50f6-4be5-9e99-89f46df950d8}" record_timestamp="1437143300857">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_munster_cork</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{8be9270b-7bb4-4d18-9261-b6d22d41ebd1}" record_timestamp="1437143300857">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_munster_dublin</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{63b37866-3354-443f-8a61-2f22c39b7b22}" record_timestamp="1437143300858">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_navarre_pamplona</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{4631b578-4ade-44bf-8aae-d942dfc003de}" record_timestamp="1437143300859">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_navarre_saragossa</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6b693bd6-5e62-451e-9183-67716e3b8fff}" record_timestamp="1437143300859">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_navarre_tudela</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{40243a57-4b1c-4bdd-8b9e-4a4180bb8ca4}" record_timestamp="1437143300860">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_northumbria_bamburgh</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0bf28565-e800-44df-b8dc-50ce064cb9b9}" record_timestamp="1437143300861">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_northumbria_streonshalh</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{831abe3e-a535-4538-8d59-ee81b045ee03}" record_timestamp="1437143300862">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_northumbria_york</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{dfb34665-b147-49ce-9103-b9376d8f19ea}" record_timestamp="1437143300862">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_obodrites_havelberg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{72a83998-a2b6-4e4f-a831-11bcdb64e66e}" record_timestamp="1437143300863">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_obodrites_rerik</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b8f39c14-7a87-4a70-aec3-a7b9caddee0b}" record_timestamp="1437143300864">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_obodrites_stargard</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6e34c239-2c4c-43de-ac74-f9879154b5c3}" record_timestamp="1437143300865">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_pannonia_cibakhaza</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{7f72cf8e-16d2-46b6-aa25-ad4a86fddfcd}" record_timestamp="1437143300866">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_pannonia_kaposvar</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{47b41c4d-68b1-4305-8e5e-9d34115ab3c3}" record_timestamp="1437143300866">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_pannonia_szeged</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c79c742e-d7b3-42a8-a89c-6409ed166a0a}" record_timestamp="1437143300867">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_pictland_dumbarton</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{17b79509-7472-429c-bec7-8abc69e83cdf}" record_timestamp="1437143300868">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_pictland_rhynie</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0b7cb525-e795-4c69-b06e-f120bdd9b728}" record_timestamp="1437143300869">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_pictland_scone</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{cf99408d-539b-4329-9e2d-31884af64043}" record_timestamp="1437143300870">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_provence_arles</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{39503449-35b1-4ee6-a99e-cf551a20b859}" record_timestamp="1437143300871">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_provence_marseille</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{89711d58-07ed-4248-981e-c13b14c7386f}" record_timestamp="1437143300872">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_provence_nice</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{42c24df6-3e6b-4965-9e30-a3b897b530df}" record_timestamp="1437143300872">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_rome_roma</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{3f9b3df3-f378-454c-b4bc-ae9ee11a51d5}" record_timestamp="1437143300873">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_rome_siena</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f2d4b003-5bbe-4f77-984b-a4e35368e722}" record_timestamp="1437143300874">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_rome_spoleto</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f2ca0323-7188-4a60-8e09-847c309343cc}" record_timestamp="1437143300874">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_sardinia_and_corsica_ajaccio</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{1976a940-5809-4ab6-8e2c-f7df90cd8d81}" record_timestamp="1437143300875">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_sardinia_and_corsica_cagliari</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{7e5f995f-b87b-41fb-a55d-2001c1b11af6}" record_timestamp="1437143300876">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_sardinia_and_corsica_olbia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f843a3e4-6588-447c-a110-24ae84664e96}" record_timestamp="1437143300877">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_saxony_bremen</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{926b2373-22d5-4623-bb4c-224d27310edd}" record_timestamp="1437143300877">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_saxony_hamburg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{5bbd38c4-cc57-4615-b4f3-c78e0baa2aef}" record_timestamp="1437143300878">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_saxony_osnabruck</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{8a753755-f35f-47bc-a7a9-956df894aa3d}" record_timestamp="1437143300879">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_septimania_narbonne</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e6db38dc-aa96-4972-ba1a-dad3ba480749}" record_timestamp="1437143300880">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_septimania_toulouse</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{ab4b10f2-d341-4c67-9910-8979d11a44fd}" record_timestamp="1437143300880">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_septimania_urgell</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{47fe671e-2928-4f85-8145-dcf4a383d914}" record_timestamp="1437143300881">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_sicilia_akragas</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{45ab5fe9-4f0a-49b8-949f-e03166967039}" record_timestamp="1437143300882">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_sicilia_panormos</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{3fcabced-b14d-4507-bce6-5695c705cd19}" record_timestamp="1437143300883">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_sicilia_syracuse</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{d87ac217-4304-456c-80b2-7c9103bcb3c3}" record_timestamp="1437143300883">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_swabia_bescanon</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{ceb204a8-152c-46df-9cbe-1e3ab74a4cf5}" record_timestamp="1437143300884">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_swabia_speyer</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e6aeabce-206c-48db-a78d-1b8491ff451a}" record_timestamp="1437143300885">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_swabia_strasbourg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{9da474c8-4c6b-4fea-b1dc-d6eac5c45f89}" record_timestamp="1437143300886">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_terra_incognita</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{3c38b859-2f0d-459f-a80e-c421ff105a6a}" record_timestamp="1437143300886">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_toledo_calatrava</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{744119b6-1852-4283-bd56-a408a59b8205}" record_timestamp="1437143300887">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_toledo_guadalajara</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{eaa47839-24f0-456f-b0b8-d5022180e254}" record_timestamp="1437143300888">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_toledo_toledo</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b5efcee2-ed5d-46a3-a856-a6f394d38211}" record_timestamp="1437143300888">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_ulster_cruachan</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{4c30c541-33c9-44de-9cf3-a115b97aa60c}" record_timestamp="1437143300763">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_ulster_downpatrick</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{2cf70c76-8bc2-4064-b35d-bb112347a0e2}" record_timestamp="1437143300764">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_ulster_grinan_of_ailech</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{3a014a97-b67b-4837-9b74-76d399ec22a7}" record_timestamp="1437143300764">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_valencia_cartagena</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c6f1cc24-36e2-47ce-b323-c98f599c02fb}" record_timestamp="1437143300765">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_valencia_palma</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{48ca3d84-9a3c-42df-b9cb-7fbe35ada325}" record_timestamp="1437143300765">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_valencia_valencia</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6b27af01-6111-492a-a6aa-18be0e64f992}" record_timestamp="1437143300766">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_wales_caerwent</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6cd8b0f2-4ed3-4c85-be68-d0d791b1a41e}" record_timestamp="1437143300767">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_wales_degannwy</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{9b01dca6-9a2d-4935-a483-b29f46737e74}" record_timestamp="1437143300767">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_wales_mathrafal</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{91bad416-feb8-4ac5-a713-bf7d20d63a80}" record_timestamp="1437143300768">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_wessex_canterbury</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{8e965fc2-1499-4b9a-b06f-29edf399dc63}" record_timestamp="1437143300769">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_wessex_london</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{99c454cc-291b-4423-b809-820bca949bbe}" record_timestamp="1437143300770">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_wessex_winchester</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{04d1a756-66b6-4b3b-afd8-77cfbd358136}" record_timestamp="1437143300771">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_west_aquitaine_angouleme</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{dd621142-3060-4635-bcbc-448d3fb70603}" record_timestamp="1437143300771">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_west_aquitaine_bourges</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{22bdcb17-9108-4d5d-823a-7bd68ae9c4b8}" record_timestamp="1437143300772">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_west_aquitaine_poitiers</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b197df75-d9a7-459d-ade6-666ccccce272}" record_timestamp="1437143300773">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_west_neustria_bayeux</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{fbd7c370-abe4-43c0-85c7-78d709710ab1}" record_timestamp="1437143300773">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_west_neustria_nantes</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{6466e643-4fed-4505-a597-023f699acd95}" record_timestamp="1437143300774">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_west_neustria_rennes</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{586115f3-69f7-4960-82f6-f56c98d9891f}" record_timestamp="1437143300775">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_wilzi_brandenburg</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{31f7e503-8433-4bfa-b2a2-a63137198f36}" record_timestamp="1437143300775">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_wilzi_cottbus</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{a143dddc-869a-4517-b402-46146b89d2fe}" record_timestamp="1437143300776">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_reg_wilzi_lipsk</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b7edae56-c0e2-4721-82ce-0ce3c6e0fc8f}" record_timestamp="1437143300777">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_adriatic_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{4a1ea3e7-e157-4caf-b2ce-036c85070fa7}" record_timestamp="1437143300778">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_alboran_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{b6c7b852-c5e9-4f0b-a33d-99d0fbe8d60b}" record_timestamp="1437143300778">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_atlantic_ocean</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{97c9973c-0b5b-4a09-9ccc-3b64d8ab534f}" record_timestamp="1437143300779">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_balearic_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{bc9ab19c-7ee0-4bdd-a708-cf8341fde07a}" record_timestamp="1437143300780">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_baltic_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{e5126537-db4d-414d-bb12-1f99af17ba67}" record_timestamp="1437143300780">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_bay_of_biscay</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{110fc58a-a08c-412b-850e-fac6f976a143}" record_timestamp="1437143300781">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_celtic_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{1fc7389e-261d-42cb-a3b0-aaa38ae046ca}" record_timestamp="1437143300781">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_gulf_of_lion</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{207d01cb-c934-4fe5-bd1e-01022fc13d23}" record_timestamp="1437143300782">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_ionian_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{3a86e746-1039-4053-ae91-26a88ef5a963}" record_timestamp="1437143300783">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_irish_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{623d4e81-6cae-494c-a964-a8f9fecf6927}" record_timestamp="1437143300783">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_lake</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{f74a73cf-e017-43f6-99bf-95c45d18d210}" record_timestamp="1437143300784">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_ligurian_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{39bfdac0-fad0-4015-9f9c-bbad2f481883}" record_timestamp="1437143300785">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_mare_incognita</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{74634f51-f06a-4d62-882b-3fe214e6f08f}" record_timestamp="1437143300786">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_mediterranean_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{9dd0ac4c-fd2e-439a-bba1-a22db0791f94}" record_timestamp="1437143300786">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_north_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{0f0efc62-a359-43ba-a4de-e854f7f32a66}" record_timestamp="1437143300787">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_south_sea</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{c6d17fb7-6235-4cf5-bda9-fa9f195be08b}" record_timestamp="1437143300788">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_straight_of_gibraltar</region>
+</campaign_map_regions>
+<campaign_map_regions record_uuid="{d8e63b2a-615c-4dde-afba-88f7b75b9bf5}" record_timestamp="1437143300788">
+<campaign_map>cha_attila_map</campaign_map>
+<region>cha_sea_tyrrhenian_sea</region>
+</campaign_map_regions>
+</dataroot>

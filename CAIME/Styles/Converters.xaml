@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converters="clr-namespace:CAIME.Converters">
+
+    <converters:ColourConverter x:Key="ColourConverter"/>
+    <converters:ImageConverter x:Key="ImageConverter"/>
+    <converters:InverseBoolConverter x:Key="InverseBoolConverter"/>
+    <converters:RegionTownSizeConverter x:Key="RegionTownSizeConverter"/>
+    
+</ResourceDictionary>

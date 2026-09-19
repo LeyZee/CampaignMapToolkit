@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:CAIME">
+
+    <DataTemplate x:Key="SwatchTemplate">
+        <RadioButton Style="{StaticResource DarkSwatch}"
+                     Background="{Binding Colour, Converter={StaticResource ColourConverter}}"
+                     IsChecked="{Binding IsActive}"
+                     ToolTip="{Binding ToolTip}"
+                     Tag="{Binding Id}"
+                     Width="14"
+                     Height="14"
+                     VerticalAlignment="Center"
+                     GroupName="Swatches"/>
+    </DataTemplate>
+</ResourceDictionary>

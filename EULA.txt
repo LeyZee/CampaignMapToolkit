@@ -1,0 +1,142 @@
+CAMPAIGN MAP TOOLKIT
+End User License Agreement (EULA) — Version 1.1
+
+Please read this agreement before using the Application. By clicking Accept or
+by continuing to use Campaign Map Toolkit, you agree to these terms. If you do
+not agree, close and uninstall the Application.
+
+------------------------------------------------------------
+1.  ABOUT THIS APPLICATION
+------------------------------------------------------------
+Campaign Map Toolkit ("the Application") is a free, open-source tool created by
+volunteers of the TW Campaign Map Modding Team ("the Developers"). It helps
+modders produce campaign map files for use in Total War games. It is provided at
+no cost and is not a commercial product.
+
+Source code is available under the Campaign Map Toolkit Non-Commercial Open
+Source License (see LICENSE).
+
+------------------------------------------------------------
+2.  LICENSE GRANT
+------------------------------------------------------------
+You are granted a personal, non-transferable, non-exclusive license to install
+and use the Application for personal, non-commercial modding purposes only.
+
+By using the Application, you further agree to be bound by the individual End
+User License Agreements (EULAs) of each game for which you elect to create mods.
+
+------------------------------------------------------------
+3.  RESTRICTIONS
+------------------------------------------------------------
+You may NOT:
+
+  - Use the Application for commercial purposes, or as part of any paid product
+    or service.
+
+  - Sell, paywall, or otherwise monetise mods or output files produced with the
+    Application. Voluntary donations for your creative work are not prohibited,
+    but are discouraged — this tool was made freely for the community, and the
+    Developers ask that the spirit of that generosity be upheld.
+
+  - Use the Application to create content that infringes the intellectual
+    property, trademarks, or copyrights of Creative Assembly, SEGA, or any
+    other rights holder.
+
+  - Use the Application to produce content that disrupts, exploits, or damages
+    Total War services, online infrastructure, or game integrity in
+    a way that negatively impacts other players.
+
+  - Produce content that is harmful, illegal, discriminatory, or offensive.
+
+  - Distribute or use the Application as part of any supply chain, automated
+    pipeline, or service that produces content on behalf of third parties for
+    commercial gain.
+
+------------------------------------------------------------
+4.  OWNERSHIP
+------------------------------------------------------------
+The Application
+  The Application and its source code are open-source and provided free of
+  charge. This does not constitute a transfer of ownership of the tool to you.
+
+Total War Intellectual Property
+  All Total War titles, game assets, names, and related intellectual property
+  are owned by The Creative Assembly and/or SEGA. This Application is an
+  independent community project and is not affiliated with, endorsed by, or
+  associated with those companies in any way.
+
+Your Output Files
+  You retain full ownership of the campaign map files and any other content
+  you produce using this Application. You are free to publish and distribute
+  those files on community platforms including Steam Workshop, NexusMods,
+  ModDB, and similar, provided you comply with Section 3 and each platform's
+  own terms of service.
+
+------------------------------------------------------------
+5.  UPDATES AND CHANGES TO THIS AGREEMENT
+------------------------------------------------------------
+The Application may download and install updates automatically to deliver fixes,
+new features, and improvements.
+
+This Agreement may be updated at any time without prior notice. Updated terms
+take effect upon delivery through an Application update. Continuing to use the
+Application after an update constitutes your acceptance of the revised terms.
+If you do not accept updated terms, you must stop using the Application.
+
+Use of the Application at any time constitutes acceptance of the terms currently
+in effect. The Application may only be used if this Agreement has been accepted.
+
+------------------------------------------------------------
+6.  DISCLAIMER OF WARRANTIES
+------------------------------------------------------------
+THE APPLICATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. THE DEVELOPERS MAKE NO GUARANTEES REGARDING FITNESS FOR A PARTICULAR
+PURPOSE, ACCURACY OR COMPLETENESS OF OUTPUT, COMPATIBILITY WITH SPECIFIC GAME
+VERSIONS OR PLATFORMS, OR UNINTERRUPTED, ERROR-FREE OPERATION.
+
+USE OF THE APPLICATION IS ENTIRELY AT YOUR OWN RISK.
+
+------------------------------------------------------------
+7.  LIMITATION OF LIABILITY
+------------------------------------------------------------
+To the fullest extent permitted by applicable law, the Developers shall not be
+liable for:
+
+  - Game account suspensions or bans resulting from mods created with this
+    Application.
+  - Loss of data, project files, game saves, or any other data.
+  - Damage to your hardware, operating system, or other software.
+  - Any financial loss, loss of income, or commercial damages of any kind.
+  - Any indirect, incidental, special, or consequential damages, even if the
+    Developers were advised of the possibility of such damages.
+
+------------------------------------------------------------
+8.  INDEMNIFICATION
+------------------------------------------------------------
+You agree to indemnify, defend, and hold harmless the Developers from and
+against any and all claims, damages, losses, and legal costs — including
+reasonable attorney fees — arising from:
+
+  - Your use of the Application in violation of this Agreement.
+  - Mods, files, or content you create that infringe third-party intellectual
+    property rights.
+  - Any legal claim brought by a third party as a result of your actions,
+    content, or distribution of output files.
+
+The Developers accept no responsibility for legal issues arising from how you
+use this Application or distribute content produced with it.
+
+------------------------------------------------------------
+9.  CONTACT
+------------------------------------------------------------
+Campaign Map Toolkit is a volunteer community project. For questions or to
+report misuse, please visit the project repository:
+
+  https://github.com/TW-Campaign-Map-Modding-Team/CampaignMapToolkit
+
+Thank you for modding responsibly and keeping the Total War community a
+welcoming place for everyone.
+
+------------------------------------------------------------
+Copyright (c) 2026 Campaign Map Toolkit Team
+Licensed under the Campaign Map Toolkit Non-Commercial Open Source License

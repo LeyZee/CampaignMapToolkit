@@ -1,0 +1,209 @@
+<Window x:Class="CAIME.Views.Windows.ShaderResolutionCorrectorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CAIME.Views.Windows"
+        mc:Ignorable="d"
+        Title="Shader Resolution Corrector"
+        Height="Auto"
+        Width="Auto"
+        MinWidth="640"
+        MaxWidth="640"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+        Closing="Window_Closing"
+        Background="{StaticResource BackgroundDarkV1Brush}">
+
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="Patches the campaign UI-overlay resolution baked into compiled shaders (.fxc). The overlay has a normal and an enable_shadows variant - the game uses one depending on the player's shadow setting, so both should be patched with the same values. Add the second file below, or leave it blank to patch just one."
+                   Foreground="White"
+                   TextWrapping="Wrap"
+                   Margin="0 0 0 10" />
+
+        <!-- Input file 1 -->
+        <Grid Grid.Row="1" Margin="0 0 0 8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0"
+                       Text="Shader file"
+                       Foreground="White"
+                       VerticalAlignment="Center" />
+
+            <TextBox Grid.Column="1"
+                     Name="Input1PathTextBox"
+                     IsReadOnly="True"
+                     Margin="0 0 6 0"
+                     VerticalAlignment="Center"
+                     Style="{StaticResource DarkTextBox}" />
+
+            <Button Grid.Column="2"
+                    Content="Browse..."
+                    Padding="10 3"
+                    Style="{StaticResource DarkButton}"
+                    Click="BrowseInput1_Click"
+                    Name="BrowseInput1Button" />
+        </Grid>
+
+        <!-- Input file 2 -->
+        <Grid Grid.Row="2" Margin="0 0 0 8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0"
+                       Text="Shader file (enable_shadows) - optional"
+                       Foreground="White"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Center" />
+
+            <TextBox Grid.Column="1"
+                     Name="Input2PathTextBox"
+                     IsReadOnly="True"
+                     Margin="6 0 6 0"
+                     VerticalAlignment="Center"
+                     Style="{StaticResource DarkTextBox}" />
+
+            <Button Grid.Column="2"
+                    Content="Browse..."
+                    Padding="10 3"
+                    Margin="0 0 6 0"
+                    Style="{StaticResource DarkButton}"
+                    Click="BrowseInput2_Click"
+                    Name="BrowseInput2Button"
+                    IsEnabled="False" />
+
+            <Button Grid.Column="3"
+                    Content="Clear"
+                    Padding="10 3"
+                    Style="{StaticResource DarkButton}"
+                    Click="ClearInput2_Click"
+                    Name="ClearInput2Button"
+                    IsEnabled="False" />
+        </Grid>
+
+        <!-- Resolution -->
+        <Border Grid.Row="3"
+                Margin="0 0 0 8"
+                BorderBrush="Black"
+                BorderThickness="1">
+            <Grid Margin="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="Width" Foreground="#AAAAAA" HorizontalAlignment="Center" />
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="Height" Foreground="#AAAAAA" HorizontalAlignment="Center" />
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Current" Foreground="White" VerticalAlignment="Center" Margin="0 4" />
+                <TextBox Grid.Row="1" Grid.Column="1" Name="CurrentWidthTextBox" Width="90" Margin="6 4" MaxLength="7" Style="{StaticResource DarkTextBox}" TextChanged="ResolutionField_TextChanged" PreviewTextInput="IntegerTextBox_PreviewTextInput" DataObject.Pasting="IntegerTextBox_Pasting" />
+                <TextBox Grid.Row="1" Grid.Column="2" Name="CurrentHeightTextBox" Width="90" Margin="6 4" MaxLength="7" Style="{StaticResource DarkTextBox}" TextChanged="ResolutionField_TextChanged" PreviewTextInput="IntegerTextBox_PreviewTextInput" DataObject.Pasting="IntegerTextBox_Pasting" />
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="New" Foreground="White" VerticalAlignment="Center" Margin="0 4" />
+                <TextBox Grid.Row="2" Grid.Column="1" Name="NewWidthTextBox" Width="90" Margin="6 4" MaxLength="7" Style="{StaticResource DarkTextBox}" TextChanged="ResolutionField_TextChanged" PreviewTextInput="IntegerTextBox_PreviewTextInput" DataObject.Pasting="IntegerTextBox_Pasting" />
+                <TextBox Grid.Row="2" Grid.Column="2" Name="NewHeightTextBox" Width="90" Margin="6 4" MaxLength="7" Style="{StaticResource DarkTextBox}" TextChanged="ResolutionField_TextChanged" PreviewTextInput="IntegerTextBox_PreviewTextInput" DataObject.Pasting="IntegerTextBox_Pasting" />
+            </Grid>
+        </Border>
+
+        <TextBlock Grid.Row="4"
+                   Text="Applies to both files when two are provided. New values are pre-filled from the open map's size, but can be edited."
+                   Foreground="#AAAAAA"
+                   TextWrapping="Wrap"
+                   FontStyle="Italic"
+                   Margin="0 0 0 8" />
+
+        <!-- Output folder -->
+        <Grid Grid.Row="5" Margin="0 0 0 8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0"
+                       Text="Save patched shader(s) to"
+                       Foreground="White"
+                       VerticalAlignment="Center" />
+
+            <TextBox Grid.Column="1"
+                     Name="OutputFolderTextBox"
+                     IsReadOnly="True"
+                     Margin="0 0 6 0"
+                     VerticalAlignment="Center"
+                     Style="{StaticResource DarkTextBox}" />
+
+            <Button Grid.Column="2"
+                    Content="Browse..."
+                    Padding="10 3"
+                    Style="{StaticResource DarkButton}"
+                    Click="BrowseOutputFolder_Click"
+                    Name="BrowseOutputFolderButton" />
+        </Grid>
+
+        <TextBlock Grid.Row="6"
+                   Name="StatusText"
+                   Text="Choose a .fxc shader file to begin."
+                   Foreground="#AAAAAA"
+                   TextWrapping="Wrap"
+                   Margin="0 0 0 4" />
+
+        <ProgressBar Grid.Row="7"
+                     Name="ProgressBar"
+                     Height="6"
+                     IsIndeterminate="True"
+                     Visibility="Collapsed"
+                     Margin="0 0 0 8" />
+
+        <Separator Grid.Row="8"
+                   Margin="0 0 0 8"
+                   Background="{StaticResource BackgroundDarkV3Brush}" />
+
+        <StackPanel Grid.Row="9"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+
+            <Button Name="RunButton"
+                    Content="Run"
+                    Padding="15 3"
+                    Margin="0 0 6 0"
+                    IsEnabled="False"
+                    Style="{StaticResource DarkButton}"
+                    Click="RunButton_Click" />
+
+            <Button Content="Close"
+                    Padding="15 3"
+                    Style="{StaticResource DarkButton}"
+                    Click="CloseButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

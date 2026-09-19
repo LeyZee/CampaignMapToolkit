@@ -1,0 +1,72 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:CAIME">
+
+    <DataTemplate x:Key="MapDataRegionTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0"
+                   Foreground="White"
+                   FontWeight="SemiBold"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Width="30"
+                   Content="{Binding Index}"/>
+
+            <TextBlock Grid.Column="1"
+                       Text="{Binding Name}"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       FontWeight="SemiBold"
+                       Foreground="White"
+                       Width="400"/>
+
+            <ComboBox Grid.Column="2"
+                      HorizontalAlignment="Right"
+                      Style="{StaticResource DarkFlatComboBox}"
+                      SelectedValue="{Binding SlotsCount, Mode=TwoWay}"
+                      Width="100">
+                
+                <ComboBox.ItemsSource>
+                    <x:Array Type="{x:Type sys:Int32}">
+                        <sys:Int32>1</sys:Int32>
+                        <sys:Int32>2</sys:Int32>
+                        <sys:Int32>3</sys:Int32>
+                        <sys:Int32>4</sys:Int32>
+                        <sys:Int32>5</sys:Int32>
+                        <sys:Int32>6</sys:Int32>
+                        <sys:Int32>7</sys:Int32>
+                        <sys:Int32>8</sys:Int32>
+                        <sys:Int32>9</sys:Int32>
+                        <sys:Int32>10</sys:Int32>
+                        <sys:Int32>11</sys:Int32>
+                        <sys:Int32>12</sys:Int32>
+                        <sys:Int32>13</sys:Int32>
+                        <sys:Int32>14</sys:Int32>
+                        <sys:Int32>15</sys:Int32>
+                        <sys:Int32>16</sys:Int32>
+                    </x:Array>
+                </ComboBox.ItemsSource>
+
+            </ComboBox>
+
+            <Label Grid.Column="3"
+                   Content="Has Port:"
+                   Foreground="White"
+                   VerticalAlignment="Center"/>
+
+            <CheckBox Grid.Column="4"
+                      VerticalAlignment="Center"
+                      IsChecked="{Binding HasPort}"/>
+
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>

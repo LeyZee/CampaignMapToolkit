@@ -1,0 +1,32 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:CAIME">
+    
+    <Color x:Key="BackgroundDarkV0">#1e1e1e</Color>
+    <SolidColorBrush x:Key="BackgroundDarkV0Brush" Color="{StaticResource BackgroundDarkV0}" />
+    
+    <Color x:Key="BackgroundDarkV1">#282828</Color>
+    <SolidColorBrush x:Key="BackgroundDarkV1Brush" Color="{StaticResource BackgroundDarkV1}" />
+    
+    <Color x:Key="BackgroundDarkV2">#464646</Color>
+    <SolidColorBrush x:Key="BackgroundDarkV2Brush" Color="{StaticResource BackgroundDarkV2}" />
+    
+    <Color x:Key="BackgroundDarkV3">#686868</Color>
+    <SolidColorBrush x:Key="BackgroundDarkV3Brush" Color="{StaticResource BackgroundDarkV3}" />
+    
+    <Color x:Key="BackgroundDarkV4">#2d2d2d</Color>
+    <SolidColorBrush x:Key="BackgroundDarkV4Brush" Color="{StaticResource BackgroundDarkV4}" />
+    
+    <Color x:Key="BackgroundDarkV5">#3f3f3f</Color>
+    <SolidColorBrush x:Key="BackgroundDarkV5Brush" Color="{StaticResource BackgroundDarkV5}" />
+    
+    <Color x:Key="BackgroundDarkV6">#535353</Color>
+    <SolidColorBrush x:Key="BackgroundDarkV6Brush" Color="{StaticResource BackgroundDarkV6}" />
+
+    <Color x:Key="BackgroundBlueV0">#007acc</Color>
+    <SolidColorBrush x:Key="BackgroundBlueV0Brush" Color="{StaticResource BackgroundBlueV0}" />
+
+    <Color x:Key="BackgroundBlueV1">#3395d6</Color>
+    <SolidColorBrush x:Key="BackgroundBlueV1Brush" Color="{StaticResource BackgroundBlueV1}" />
+
+</ResourceDictionary>

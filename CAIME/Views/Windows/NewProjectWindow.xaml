@@ -1,0 +1,155 @@
+﻿<Window x:Class="CAIME.Windows.NewProjectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CAIME.Windows"
+        mc:Ignorable="d"
+        Height="Auto"
+        Width="Auto"
+        MinWidth="350"
+        SizeToContent="WidthAndHeight"
+        Title="Create new project"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        WindowStyle="ThreeDBorderWindow"
+        WindowStartupLocation="CenterOwner"
+        Background="{StaticResource BackgroundDarkV1Brush}">
+
+    <Grid Margin="10 15">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Campaign map name -->
+        <TextBlock Grid.Column="0"
+                   Grid.Row="0"
+                   Text="Campaign map name:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+
+        <TextBox Grid.Column="1"
+                 Grid.Row="0"
+                 Grid.ColumnSpan="2"
+                 Margin="0 2"
+                 Text="{Binding CampaignMapName}"
+                 Style="{StaticResource DarkTextBox}"
+                 LostFocus="TextBox_LostFocus"/>
+
+        <!-- Separator -->
+        <Separator Grid.Column="0"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="3"
+                   Margin="0 10"
+                   Background="{StaticResource BackgroundDarkV3Brush}" />
+
+        <!-- Template -->
+        <TextBlock Grid.Column="0"
+                   Grid.Row="2"
+                   Text="Template:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+
+        <ComboBox Grid.Column="1"
+                  Grid.Row="2"
+                  Grid.ColumnSpan="2"
+                  Margin="0 2"
+                  Style="{StaticResource DarkFlatComboBox}"
+                  ItemsSource="{Binding Templates}"
+                  SelectedItem="{Binding SelectedTemplate}"/>
+        
+        <!-- Game -->
+        <TextBlock Grid.Column="0"
+                   Grid.Row="3"
+                   Text="Game:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+
+        <ComboBox Grid.Column="1"
+                  Grid.Row="3"
+                  Grid.ColumnSpan="2"
+                  Margin="0 2"
+                  IsEnabled="{Binding IsGameBoxEnabled}"
+                  SelectedItem="{Binding SelectedGame}"
+                  Style="{StaticResource DarkFlatComboBox}"
+                  ItemsSource="{Binding Games}"/>
+        
+        <!-- Map size -->
+        <TextBlock Grid.Column="0"
+                   Grid.Row="4"
+                   Text="Map size:"
+                   Foreground="White"
+                   VerticalAlignment="Center" />
+
+        <Grid Grid.Column="1"
+              Grid.Row="4"
+              Grid.ColumnSpan="2"
+              Margin="0 2" >
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0"
+                     TextAlignment="Right"
+                     IsEnabled="{Binding IsMapSizeXEnabled}"
+                     Text="{Binding MapWidth}"
+                     Style="{StaticResource DarkTextBox}" />
+
+            <TextBlock Grid.Column="1"
+                       Text="x"
+                       Margin="5 2"
+                       Foreground="White"
+                       VerticalAlignment="Center" />
+
+            <TextBox Grid.Column="2"
+                     TextAlignment="Left"
+                     IsEnabled="{Binding IsMapSizeYEnabled}"
+                     Text="{Binding MapHeight}"
+                     Style="{StaticResource DarkTextBox}" />
+        </Grid>
+
+        <!-- Separator -->
+        <Separator Grid.Column="0"
+                   Grid.Row="5"
+                   Grid.ColumnSpan="3"
+                   Margin="0 10"
+                   Background="{StaticResource BackgroundDarkV3Brush}" />
+        
+        <!-- Action buttons -->
+        <StackPanel Grid.ColumnSpan="3"
+                    Grid.Row="6"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+                
+            <Button Content="Create"
+                    Padding="20 5"
+                    Margin="5 0 0 0"
+                    Style="{StaticResource DarkButton}"
+                    Click="Create_Click" />
+                
+            <Button Content="Cancel"
+                    Padding="20 5"
+                    Margin="5 0 0 0"
+                    Style="{StaticResource DarkButton}"
+                    Click="Cancel_Click" />
+                
+        </StackPanel>
+    </Grid>
+</Window>

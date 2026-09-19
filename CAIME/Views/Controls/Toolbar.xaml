@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="CAIME.Toolbar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAIME"
+             mc:Ignorable="d"
+             Height="Auto"
+             Width="Auto">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Templates/ToolTemplate.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        
+        <StackPanel Background="{StaticResource BackgroundDarkV1Brush}"
+                    Margin="0"
+                    Grid.Row="0"
+                    Orientation="Vertical"
+                    VerticalAlignment="Center">
+        
+            <Border BorderThickness="0"
+                    BorderBrush="{StaticResource BackgroundDarkV3Brush}"
+                    Background="{StaticResource BackgroundDarkV4Brush}">
+                
+                    <ItemsControl ItemTemplate="{StaticResource ToolTemplate}"
+                                  ItemsSource="{Binding Tools}">
+                    
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel Orientation="Vertical"
+                                                        VerticalAlignment="Center"/>
+                            </ItemsPanelTemplate>
+                        
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                
+            </Border>
+        </StackPanel>
+
+        <Button Name="Properties"
+                IsEnabled="False"
+                Style="{StaticResource DarkButton}"
+                Click="BrushProperty_Click"
+                Grid.Row="1">
+            
+            <!--<Button.InputBindings>
+                <KeyBinding Key="X" Modifiers="Control" Command="Properties"/> 
+            </Button.InputBindings> -->
+            
+            <Image Source="{StaticResource PropertiesTool}"
+                   RenderOptions.BitmapScalingMode="Fant"/>
+        </Button>
+        
+    </Grid>
+</UserControl>

@@ -1,0 +1,235 @@
+//------------------------------------------------
+//--- 010 Editor v11.0.1 Binary Template
+//
+//      File: .ppd binary template
+//   Authors: Mr.Jox (aka victimized.), Maruka, Marthenil
+//   Version: 1.0
+//   Purpose: Reverse engineering TOTAL WAR campaign map files for the purposes of creating fully functioning custom campaign maps or modifying already existing maps
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+local int i=0;
+local int j=0;
+
+typedef struct 
+{
+    uint64 MagicNumber;
+    uint32 VersionNumber;
+    uint32 LandRegionsCount;
+} PPD_HEADER <size=16>;
+
+typedef struct
+{
+    uint32 LandRegionNameLength;
+    char LandRegionName[LandRegionNameLength];
+} LAND_REGION_ENTRY;
+
+typedef struct
+{
+    typedef struct
+    {
+        byte MoveCostIndex  : 7;
+        byte IsNavigable    : 1;
+    } HEX_EDGE_DATA <size=1>;
+
+    HEX_EDGE_DATA EdgeData_TopEdge;
+    HEX_EDGE_DATA EdgeData_TopRightEdge;
+    HEX_EDGE_DATA EdgeData_BottomRightEdge;
+    HEX_EDGE_DATA EdgeData_BottomEdge;
+    HEX_EDGE_DATA EdgeData_BottomLeftEdge;
+    HEX_EDGE_DATA EdgeData_TopLeftEdge;
+
+    ushort TileGroupIndex   : 12;
+    ushort HexType          : 4;
+} HEX_CELL_DATA <size=8>;
+
+typedef struct
+{
+    uint16 HighLevelConnectivityIndex;
+    uint16 RegionIndex;
+} TILE_GROUP <size=4>;
+
+typedef struct
+{
+    uint16 PosX;
+    uint16 PosY;
+} HEX <size=4>;
+
+typedef struct
+{
+    typedef struct
+    {
+        byte IsNavigable_TopEdge            : 1;
+        byte IsNavigable_TopRightEdge       : 1;
+        byte IsNavigable_BottomRightEdge    : 1;
+        byte IsNavigable_BottomEdge         : 1;
+        byte IsNavigable_BottomLeftEdge     : 1;
+        byte IsNavigable_TopLeftEdge        : 1;
+    } EDGE_MASK <size=1>;
+    
+    HEX Hex;
+    EDGE_MASK EdgeMask;
+} HEX_WITH_EDGE_MASK <size=5>;
+
+typedef struct
+{
+    uint16 HexesCount;
+    
+    if (HexesCount > 0)
+        HEX_WITH_EDGE_MASK Hexes[HexesCount];
+} PASSABLE_HEX_EDGE;
+
+typedef struct
+{
+    uint16 HighLevelConnectivityIndexLand;
+    uint16 HighLevelConnectivityIndexSea;
+} HIGH_LEVEL_CONNECTIVITY_INDEX_PAIR <size=4>;
+
+typedef struct
+{
+    HIGH_LEVEL_CONNECTIVITY_INDEX_PAIR HighLevelConnectivityIndexPair;
+
+    uint16 LandToSeaCellsCount;
+    HEX_WITH_EDGE_MASK LandToSeaHexes[LandToSeaCellsCount];
+
+    uint16 SeaToLandCellsCount;
+    HEX_WITH_EDGE_MASK SeaToLandHexes[SeaToLandCellsCount];
+} HLCI_BEACH_DATA;
+
+typedef struct
+{
+    typedef struct
+    {
+        uint16 CellsCount;
+        HEX Hexes[CellsCount];
+    } BRIDGE_SIDE;
+
+    BRIDGE_SIDE BridgeSide1;
+    BRIDGE_SIDE BridgeSide2;
+} BRIDGE_CELL_DATA;
+
+typedef struct
+{
+    typedef struct
+    {
+        uint16 RegionIdFrom;
+        uint16 RegionIdTo;
+    } SEGMENT_DIRECTION <size=4>;
+
+    uint32 NumberOfTownsInRoadSegment;
+    SEGMENT_DIRECTION SegmentDirections[NumberOfTownsInRoadSegment];
+    
+    uint16 SegmentHexesCount;
+    HEX_WITH_EDGE_MASK RoadSegmentHexes[SegmentHexesCount];
+} ROAD_SEGMENT;
+
+typedef struct
+{
+    uint32 NumberOfHexesInRestriction;
+    HEX_WITH_EDGE_MASK Hex[NumberOfHexesInRestriction];
+} RESTRICTION_LEVEL;
+
+typedef struct
+{
+    uint32 Checksum;
+} CRC32_CHECKSUM;
+
+PPD_HEADER Header;
+
+struct LAND_REGIONS_ARRAY
+{
+    for (i=0;i<Header.LandRegionsCount;++i)
+        LAND_REGION_ENTRY LandRegionEntry;
+} LandRegionsArray;
+
+struct HEX_MAP_DATA
+{
+    uint16 HexMapWidth;
+    uint16 HexMapHeight;
+
+    HEX_CELL_DATA CellData[(uint32)HexMapWidth*(uint32)HexMapHeight];
+} HexMapData;
+
+struct MOVEMENT_COSTS_ARRAY
+{
+    uint32 MoveCostsCount;
+    uint16 MovementCosts[MoveCostsCount];
+} MoveCosts;
+
+struct TILE_GROUPS_ARRAY
+{
+    uint16 TileGroupsCount;
+    TILE_GROUP TileGroup[TileGroupsCount];
+} TileGroups;
+
+struct PASSABLE_HEX_EDGES_ARRAY
+{
+    for (i=0;i<Header.LandRegionsCount;++i)
+        PASSABLE_HEX_EDGE PassableHexEdge;
+} PassableHexEdges;
+
+struct BEACHES_ARRAY
+{
+    uint16 HighLevelConnectivityIndexConnectionsCount;
+    for (i=0;i<HighLevelConnectivityIndexConnectionsCount;++i)
+        HLCI_BEACH_DATA BeachData;
+} Beaches;
+
+struct HLCI_CONNECTIONS
+{
+    uint16 HighLevelConnectivityIndicesCount;
+    HIGH_LEVEL_CONNECTIVITY_INDEX_PAIR HighLevelConnectivityIndexPair[HighLevelConnectivityIndicesCount];
+} HlciConnections;
+
+struct BRIDGES_ARRAY
+{
+    uint16 BridgesCount;
+    for (i=0;i<BridgesCount;++i)
+        BRIDGE_CELL_DATA BridgeCellData;
+} Bridges;
+
+struct HEURISTIC_CACHE
+{
+    for(i=0;i<TileGroups.TileGroupsCount;++i)
+    {
+        struct
+        {
+            for(j=0;j<TileGroups.TileGroupsCount;++j)
+                uint32 DistanceToAnotherTileGroup;
+        } DistancesFromTileGroup;
+    }
+} HeuristicCache;
+
+struct PASSABLE_BORDER_HEXES
+{
+    uint32 PassableBorderHexesCount;
+    HEX Hex[PassableBorderHexesCount];
+} PassableBorderHexes;
+
+struct CUMULATIVE_BORDER_HEXES
+{
+    uint32 CumulativeHexesCount[TileGroups.TileGroupsCount];
+} CumulativeBorderHexes;
+
+struct ROAD_SEGMENTS
+{
+    uint16 RoadSegmentsCount;
+    
+    struct ROAD_SEGMENT_DATA
+    {
+        for (i=0;i<RoadSegmentsCount;++i)
+            ROAD_SEGMENT RoadSegment;
+    } RoadSegmentData;
+} RoadSegments;
+
+struct RESTRICTION_LEVELS
+{
+    byte NumberOfRestrictionLevels;
+    for(i=0;i<NumberOfRestrictionLevels;++i)
+        RESTRICTION_LEVEL RestrictionLevel;
+} RestrictionLevels;
+
+CRC32_CHECKSUM Checksum;

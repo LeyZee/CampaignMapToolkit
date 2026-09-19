@@ -1,0 +1,56 @@
+CAMPAIGN MAP TOOLKIT
+Credits
+
+------------------------------------------------------------
+1. GENERAL INFO
+------------------------------------------------------------
+The aim of this project is to allow Total War modders to create or modify campaign map pathfinding files. The supported files include:
+- map.hex
+- map_data.esf
+- pathfinding.ppd
+- trade_routes.ptd
+- borders.pbd
+- lookup tga images
+- and possibly more
+
+The games that the application currently supports are:
+- Total War: Rome 2
+- Total War: Attila
+- Total War: Thrones of Britannia
+- Total War: Warhammer
+- Total War: Warhammer 2
+- Total War: Warhammer 3
+- Total War: Three Kingdoms
+- Total War: Troy
+- Total War: Pharaoh
+
+------------------------------------------------------------
+2. DEVELOPERS
+------------------------------------------------------------
+- MrJox (aka victimized.): Project founder. Lead software engineer, research and reverse engineer.
+- ChaosRobbie: Software, research and reverse engineer. Contributed to many aspects of the applcation.
+- Celebdil: Software engineer. Contributed to borders.pbd export.
+
+------------------------------------------------------------
+3. CONTRIBUTERS
+------------------------------------------------------------
+3.1. Research
+- Maruka: Project founder. Research and reverse engineer. Helped to reverse engineer pathfinding.ppd file.
+- Marthenil: Project founder. Research and reverse engineer. Helped to reverse engineer pathfinding.ppd file.
+- Leoman (aka justLeo): Research on tilemapping; Helped to figure out how to generate hlp_data and spd_data.
+- Ophis: Contributed by providing valuable information on how the campaign maps, campaigns and Total War games work in general (on conceptual and algorithmic level).
+- Causeless: Contributed by providing valuable information on how the campaign map files structure. Helped with software design.
+- PeteCA: Contributed by providing valuable information on the campaign map files structure.
+- Mitch: Contributed by providing valuable information on the campaign map files structure.
+
+3.2. Development
+- CharlesWoodhill: Contributed to preferences feature.
+- TadeoM: Contributed to painting features.
+
+3.3. Third party
+- Frodo: Developed third party startpos, hlp_data and spd_data processing modules as RPFM components.
+- Daniu: Developed third party ESF library.
+- Ironic: Developed a python script that was ported to CAIME as Shader Resolution Corrector tool.
+
+3.4. Beta test
+- All the beta testers that provided feedback and helped to polish and improve the application.

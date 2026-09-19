@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:CAIME">
+
+    <DataTemplate x:Key="LogItemTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Text="{Binding Time}" Foreground="White"/>
+            <TextBlock Grid.Column="2" Text="{Binding Message}" FontWeight="{Binding FontWeight}" FontStyle="{Binding FontStyle}" TextWrapping="Wrap" Foreground="{Binding Colour}"/>
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>

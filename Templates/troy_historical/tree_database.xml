@@ -1,0 +1,90 @@
+<TREE_DATABASE>
+<!--grass-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/grass'                     
+    summer_folder='RigidModels/campaign/vegetation/grass'
+    autumn_folder='RigidModels/campaign/vegetation/grass' 
+    winter_folder='RigidModels/campaign/vegetation/grass' 
+    snow_folder='RigidModels/campaign/vegetation/grass' 
+    red='0' green='0' blue='255' />
+<!-- empire_large-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/empire_large'                     
+    summer_folder='RigidModels/campaign/vegetation/empire_large'
+    autumn_folder='RigidModels/campaign/vegetation/empire_large' 
+    winter_folder='RigidModels/campaign/vegetation/empire_large'
+	snow_folder='RigidModels/campaign/vegetation/snow_tree_dense'
+    red='175' green='127' blue='127' />
+<!-- empire_med-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/empire_med'                     
+    summer_folder='RigidModels/campaign/vegetation/empire_med'
+    autumn_folder='RigidModels/campaign/vegetation/empire_med' 
+    winter_folder='RigidModels/campaign/vegetation/empire_med' 
+    snow_folder='RigidModels/campaign/vegetation/snow_tree_light' 
+    red='175' green='223' blue='127' />
+<!--shrubs_grass-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/shrubs_and_grass'                     
+    summer_folder='RigidModels/campaign/vegetation/shrubs_and_grass'
+    autumn_folder='RigidModels/campaign/vegetation/shrubs_and_grass' 
+    winter_folder='RigidModels/campaign/vegetation/shrubs_and_grass' 
+    snow_folder='RigidModels/campaign/vegetation/shrubs_and_grass' 
+    red='205' green='195' blue='249' />
+<!--spruce_large-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/spruce_large'                     
+    summer_folder='RigidModels/campaign/vegetation/spruce_large'
+    autumn_folder='RigidModels/campaign/vegetation/spruce_large' 
+    winter_folder='RigidModels/campaign/vegetation/spruce_large' 
+    snow_folder='RigidModels/campaign/vegetation/spruce_large' 
+    red='218' green='52' blue='52' />
+<!--spruce_small-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/spruce_small'                     
+    summer_folder='RigidModels/campaign/vegetation/spruce_small'
+    autumn_folder='RigidModels/campaign/vegetation/spruce_small' 
+    winter_folder='RigidModels/campaign/vegetation/spruce_small' 
+    snow_folder='RigidModels/campaign/vegetation/spruce_small' 
+    red='255' green='187' blue='42' />
+<!--small_srubs-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/small_srubs'                     
+    summer_folder='RigidModels/campaign/vegetation/small_srubs'
+    autumn_folder='RigidModels/campaign/vegetation/small_srubs' 
+    winter_folder='RigidModels/campaign/vegetation/small_srubs' 
+    snow_folder='RigidModels/campaign/vegetation/small_srubs' 
+    red='36' green='101' blue='0' />
+<!--furn-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/furn'                     
+    summer_folder='RigidModels/campaign/vegetation/furn'
+    autumn_folder='RigidModels/campaign/vegetation/furn' 
+    winter_folder='RigidModels/campaign/vegetation/furn' 
+    snow_folder='RigidModels/campaign/vegetation/furn' 
+    red='255' green='235' blue='104' />
+<!--empire_light-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/empire_light'                     
+    summer_folder='RigidModels/campaign/vegetation/empire_light'
+    autumn_folder='RigidModels/campaign/vegetation/empire_light' 
+    winter_folder='RigidModels/campaign/vegetation/empire_light' 
+    snow_folder='RigidModels/campaign/vegetation/empire_light' 
+    red='189' green='255' blue='189' />
+<!--spruce_single-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/spruce_single'                     
+    summer_folder='RigidModels/campaign/vegetation/spruce_single'
+    autumn_folder='RigidModels/campaign/vegetation/spruce_single' 
+    winter_folder='RigidModels/campaign/vegetation/spruce_single' 
+    snow_folder='RigidModels/campaign/vegetation/spruce_single' 
+    red='255' green='154' blue='104' />
+<!--empire_flower-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/empire_flower'                     
+    summer_folder='RigidModels/campaign/vegetation/empire_flower'
+    autumn_folder='RigidModels/campaign/vegetation/empire_flower' 
+    winter_folder='RigidModels/campaign/vegetation/empire_flower' 
+    snow_folder='RigidModels/campaign/vegetation/empire_flower' 
+    red='145' green='109' blue='39' />
+</TREE_DATABASE>

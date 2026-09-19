@@ -1,0 +1,88 @@
+﻿<Window x:Class="CAIME.Windows.BrushPropertyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CAIME.Windows"
+        mc:Ignorable="d"
+        Title="Brush Properties"
+        Height="Auto"
+        Width="Auto"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize"
+        Topmost="True"
+        WindowStyle="ThreeDBorderWindow"
+        Background="{StaticResource BackgroundDarkV1Brush}"
+        Loaded="Window_Loaded" >
+    
+    <Grid Background="{StaticResource BackgroundDarkV1Brush}"
+          Margin="5, 10"
+          Width="300">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+            
+        <TextBlock Grid.Column="0"
+                   Grid.Row="0"
+                   Text="Brush Size:"
+                   Foreground="White" />
+            
+        <TextBlock Grid.Column="1"
+                   Grid.Row="0"
+                   HorizontalAlignment="Right"
+                   Text="{Binding ElementName=brushSizeSlider,
+                                  Path=Value}"
+                   Foreground="White" />
+
+        <Slider Grid.Column="2"
+                Grid.Row="0"
+                Margin="5 0 0 0"
+                x:Name="brushSizeSlider"
+                Minimum="1"
+                Maximum="10"
+                LargeChange="1"
+                TickFrequency="1"
+                IsSnapToTickEnabled="True"
+                ValueChanged="BrushSize_ValueChanged"
+                Value="{Binding BrushSize, FallbackValue=1,
+                                           Mode=OneWayToSource}"/>
+
+        <Separator Grid.Column="0"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="3"
+                   Margin="0 10"
+                   Background="{StaticResource BackgroundDarkV3Brush}" />
+
+        <StackPanel Grid.Column="0"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="3"
+                    Margin="5"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+
+            <Button Grid.Column="0"
+                    Content="Apply"
+                    Padding="20 5"
+                    Margin="2"
+                    Style="{StaticResource DarkButton}"
+                    Click="Okay_Click" />
+
+            <Button Grid.Column="1"
+                    Content="Cancel"
+                    Padding="20 5"
+                    Margin="2"
+                    Style="{StaticResource DarkButton}"
+                    Click="Cancel_Click" />
+
+        </StackPanel>
+    </Grid>
+</Window>

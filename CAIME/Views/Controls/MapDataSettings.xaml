@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="CAIME.Views.MapDataSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAIME.Views"
+             mc:Ignorable="d"
+             MinWidth="400"
+             MaxWidth="600">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="0"
+              Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0"
+                   FontWeight="SemiBold"
+                   Foreground="White"
+                   Content="File:" />
+
+            <TextBox Grid.Column="1"
+                     Margin="0 3"
+                     Width="Auto"
+                     Text="{Binding MapDataFilename}"
+                     Style="{StaticResource DarkTextBox}" />
+            
+        </Grid>
+
+        <Button Grid.Column="1"
+                Grid.Row="0"
+                Content="Browse"
+                Padding="5 0"
+                Margin="0 3"
+                Click="BrowseFile_Click"
+                Style="{StaticResource DarkButton}" />
+
+        <StackPanel Grid.Column="0"
+                    Grid.Row="2"
+                    Orientation="Horizontal">
+
+            <Button Grid.Column="1"
+                    Grid.Row="0"
+                    Content="Apply config file"
+                    Padding="5 0"
+                    Margin="3"
+                    IsEnabled="{Binding IsFileOpen}"
+                    Click="ApplyConfig_Click"
+                    Style="{StaticResource DarkButton}" />
+
+            <Button Grid.Column="1"
+                    Grid.Row="0"
+                    Content="Create config file"
+                    Padding="5 0"
+                    Margin="0 3"
+                    IsEnabled="{Binding IsFileOpen}"
+                    Click="CreateConfig_Click"
+                    Style="{StaticResource DarkButton}" />
+
+        </StackPanel>
+    </Grid>
+</UserControl>

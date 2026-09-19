@@ -1,0 +1,106 @@
+<TREE_DATABASE>
+<!--charlemagne_evergreen-->
+<TREE_TYPE
+	spring_folder='RigidModels/campaign/vegetation/char_evgre'                     
+    summer_folder='RigidModels/campaign/vegetation/char_evgre'
+    autumn_folder='RigidModels/campaign/vegetation/char_evgre' 
+    winter_folder='RigidModels/campaign/vegetation/char_evgre' 
+    snow_folder='RigidModels/campaign/vegetation/char_evgre' 
+    red='200' green='65' blue='65' />
+<!--charlemagne_grass-->
+    <TREE_TYPE
+	spring_folder='RigidModels/campaign/vegetation/char_grass'                     
+    summer_folder='RigidModels/campaign/vegetation/char_grass'
+    autumn_folder='RigidModels/campaign/vegetation/char_grass' 
+    winter_folder='RigidModels/campaign/vegetation/char_grass' 
+    snow_folder='RigidModels/campaign/vegetation/char_grass' 
+    red='0' green='0' blue='230' />
+<!--grass-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/northern_grass'                     
+    summer_folder='RigidModels/campaign/vegetation/northern_grass'
+    autumn_folder='RigidModels/campaign/vegetation/northern_grass' 
+    winter_folder='RigidModels/campaign/vegetation/northern_grass' 
+    snow_folder='RigidModels/campaign/vegetation/northern_grass' 
+    red='0' green='0' blue='255' />
+<!-- northern inpassable-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/dense'                     
+    summer_folder='RigidModels/campaign/vegetation/dense'
+    autumn_folder='RigidModels/campaign/vegetation/dense' 
+    winter_folder='RigidModels/campaign/vegetation/dense'
+	snow_folder='RigidModels/campaign/vegetation/snow_tree_dense'
+    red='175' green='127' blue='127' />
+<!-- northern passable-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/medium'                     
+    summer_folder='RigidModels/campaign/vegetation/medium'
+    autumn_folder='RigidModels/campaign/vegetation/medium' 
+    winter_folder='RigidModels/campaign/vegetation/medium' 
+    snow_folder='RigidModels/campaign/vegetation/snow_tree_light' 
+    red='175' green='223' blue='127' />
+<!-- mediterranean inpassable-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/mediterranean_dense'                     
+    summer_folder='RigidModels/campaign/vegetation/mediterranean_dense'
+    autumn_folder='RigidModels/campaign/vegetation/mediterranean_dense' 
+    winter_folder='RigidModels/campaign/vegetation/mediterranean_dense' 
+    snow_folder='RigidModels/campaign/vegetation/snow_tree_dense' 
+    red='255' green='222' blue='0' />
+<!-- mediterranean passable-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/mediterranean_medium'                     
+    summer_folder='RigidModels/campaign/vegetation/mediterranean_medium'
+    autumn_folder='RigidModels/campaign/vegetation/mediterranean_medium' 
+    winter_folder='RigidModels/campaign/vegetation/mediterranean_medium' 
+    snow_folder='RigidModels/campaign/vegetation/snow_tree_light' 
+    red='187' green='171' blue='62' />
+<!-- spruce inpassable-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/spruce_dense'                     
+    summer_folder='RigidModels/campaign/vegetation/spruce_dense'
+    autumn_folder='RigidModels/campaign/vegetation/spruce_dense' 
+    winter_folder='RigidModels/campaign/vegetation/spruce_dense' 
+    snow_folder='RigidModels/campaign/vegetation/winter_spruce' 
+    red='218' green='52' blue='52' />
+<!-- spruce passable-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/light_spruce_deciduous_mix'                     
+    summer_folder='RigidModels/campaign/vegetation/light_spruce_deciduous_mix'
+    autumn_folder='RigidModels/campaign/vegetation/light_spruce_deciduous_mix' 
+    winter_folder='RigidModels/campaign/vegetation/light_spruce_deciduous_mix' 
+    snow_folder='RigidModels/campaign/vegetation/winter_spruce_light' 
+    red='255' green='187' blue='42' />
+<!-- light choppable tree-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/light'                     
+    summer_folder='RigidModels/campaign/vegetation/light'
+    autumn_folder='RigidModels/campaign/vegetation/light' 
+    winter_folder='RigidModels/campaign/vegetation/light' 
+    snow_folder='RigidModels/campaign/vegetation/light' 
+    red='100' green='223' blue='127' can_be_removed = 'true'/>
+<!-- light choppable pine tree-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/light_spruce_deciduous_mix'                     
+    summer_folder='RigidModels/campaign/vegetation/light_spruce_deciduous_mix'
+    autumn_folder='RigidModels/campaign/vegetation/light_spruce_deciduous_mix' 
+    winter_folder='RigidModels/campaign/vegetation/light_spruce_deciduous_mix' 
+    snow_folder='RigidModels/campaign/vegetation/winter_spruce_light' 
+    red='33' green='62' blue='170' can_be_removed = 'true'/>
+<!-- Palm tree-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/desert_acacia_dense'                     
+    summer_folder='RigidModels/campaign/vegetation/desert_acacia_dense'
+    autumn_folder='RigidModels/campaign/vegetation/desert_acacia_dense' 
+    winter_folder='RigidModels/campaign/vegetation/desert_acacia_dense' 
+    snow_folder='RigidModels/campaign/vegetation/desert_acacia_dense' 
+    red='255' green='26' blue='215' />
+<!-- Light Palm tree-->
+  <TREE_TYPE 
+    spring_folder='RigidModels/campaign/vegetation/palm_light'                     
+    summer_folder='RigidModels/campaign/vegetation/palm_light'
+    autumn_folder='RigidModels/campaign/vegetation/palm_light' 
+    winter_folder='RigidModels/campaign/vegetation/palm_light' 
+    snow_folder='RigidModels/campaign/vegetation/palm_light' 
+    red='255' green='168' blue='240' />
+</TREE_DATABASE>
