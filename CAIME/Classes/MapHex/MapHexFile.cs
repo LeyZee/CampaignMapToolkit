@@ -121,20 +121,6 @@ namespace CAIME
 
         private Dictionary<int, int>        RegionIndexRemapTable;
 
-        // Two blocks of the 0x12/0x14 layout were read as fixed-size unknowns: three uint32s
-        // (1, 0, 0) between the name lists and the colour tables, and one (uint32, int32 size,
-        // bytes) block after the hex data. They are in fact two lists sharing a count:
-        //   head: int32 N, then N x (ascii string, uint32)
-        //   tail: int32 N, then N x (int32 size, byte[size]) - one bit per hex, ceil(width / 8)
-        //         bytes per row, all zero in every file seen
-        // Every vanilla map (WH1 warhammer_map_1_1_wood_elves, WH3 wh3_main_combi_map_5,
-        // wh3_main_prologue_map...) carries a single entry ("", 0), which the fixed-size read
-        // happened to fit. The two Warhammer 1 mini-campaign maps carry a second one -
-        // wh_dlc05_wood_elves_map_1: ("", 0), ("32", 0); wh_dlc03_beastmen_map_1: ("", 0),
-        // ("8", 0) - so the colour tables and the map size were read a few bytes off ("20 x 0
-        // hexes", or an array-size exception). The meaning of the entries is unknown; they are
-        // preserved verbatim on save and the blobs are rewritten as zero blobs of the current
-        // map size.
         public List<KeyValuePair<string, uint>> UnknownEntries { get; private set; } = DefaultUnknownEntries();
 
         private int                         unknownTrailingBlockCount = 1;
@@ -1913,8 +1899,6 @@ namespace CAIME
 
         private void WriteUnknownTrailingBlocks(BinaryWriter bw, uint width, uint height)
         {
-            // One bit per hex, rows padded to whole bytes: 414 x 250 is written as 52 x 250 =
-            // 13000 bytes by the game's own tools, where Capacity / 8 would give 12937.
             var blobSize = (int)(((width + 7) / 8) * height);
 
             bw.Write(unknownTrailingBlockCount);
