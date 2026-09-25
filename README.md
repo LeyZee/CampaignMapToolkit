@@ -16,6 +16,9 @@ Games supported:
 3. Right Mouse Click on Solution in Solution Explorer and select "Restore NuGet Packages" from context menu.
 4. Build.
 
+**Guides**:
+Step-by-step guides (English and French) for CAIME, RPFM, Terry and BOB, written while porting the Warhammer I *Season of Revelation* campaign map to Warhammer III: https://bretonia.dev/atelier/en/
+
 **GitHub workflow**:
 1. Branch from *main* and give a meaningful name for your branch (like a feature name);
 2. Commit all your changes and push them to this repo;
